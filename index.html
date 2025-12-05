@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooted | Bible Study Curriculum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <svg viewBox="0 0 40 40" style="width: 40px; height: 40px;">
+                    <ellipse cx="20" cy="14" rx="14" ry="11" fill="#2E7D32"/>
+                    <ellipse cx="20" cy="12" rx="11" ry="9" fill="#43A047"/>
+                    <ellipse cx="20" cy="10" rx="8" ry="6" fill="#66BB6A"/>
+                    <path d="M20 36 L20 22" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M20 26 Q14 22 10 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M20 26 Q26 22 30 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="12" y="33" width="16" height="4" rx="1" fill="#F5E6D3"/>
+                </svg>
+                <span class="text-white font-bold text-xl tracking-wide" style="font-family: Georgia, serif;">ROOTED</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-green-500 font-semibold text-sm">Home</a>
+                <a href="#curriculum" class="text-neutral-400 hover:text-white transition text-sm font-medium">Curriculum</a>
+                <a href="#about" class="text-neutral-400 hover:text-white transition text-sm font-medium">About</a>
+                <a href="workbooks.html" class="text-neutral-400 hover:text-white transition text-sm font-medium">Workbooks</a>
+            </div>
+            <a href="week1.html" class="bg-green-600 hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
+                Start Learning
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-green-900/20 via-black to-black"></div>
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-green-600/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10 text-center">
+            <!-- Logo Large -->
+            <div class="flex justify-center mb-8">
+                <svg viewBox="0 0 200 260" style="width: 120px; height: 156px;">
+                    <defs>
+                        <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#3D2314"/>
+                            <stop offset="50%" stop-color="#5D4037"/>
+                            <stop offset="100%" stop-color="#3D2314"/>
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="80" rx="85" ry="70" fill="#2E7D32"/>
+                    <ellipse cx="100" cy="70" rx="70" ry="55" fill="#43A047"/>
+                    <ellipse cx="100" cy="60" rx="50" ry="40" fill="#66BB6A"/>
+                    <path d="M100 220 L100 130" stroke="url(#trunkGrad)" stroke-width="28" stroke-linecap="round"/>
+                    <path d="M100 160 Q65 130 40 100" stroke="url(#trunkGrad)" stroke-width="12" stroke-linecap="round"/>
+                    <path d="M100 160 Q135 130 160 100" stroke="url(#trunkGrad)" stroke-width="12" stroke-linecap="round"/>
+                    <rect x="55" y="215" width="90" height="30" rx="4" fill="#F5E6D3"/>
+                    <rect x="60" y="220" width="80" height="20" rx="2" fill="#E8D5C4"/>
+                    <line x1="70" y1="225" x2="130" y2="225" stroke="#C4A77D" stroke-width="1"/>
+                    <line x1="70" y1="230" x2="130" y2="230" stroke="#C4A77D" stroke-width="1"/>
+                    <line x1="70" y1="235" x2="110" y2="235" stroke="#C4A77D" stroke-width="1"/>
+                </svg>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                Get <span class="gradient-text">Rooted</span> in Truth
+            </h1>
+            <p class="text-xl md:text-2xl text-neutral-400 mb-4 max-w-3xl mx-auto">
+                A 5-week Bible study curriculum covering 22 essential doctrines of the Christian faith
+            </p>
+            <p class="text-neutral-500 mb-10 max-w-2xl mx-auto">
+                Build your faith on an unshakeable foundation. From the inspiration of Scripture to 
+                the hope of Christ's return—everything you need to grow deep roots.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <a href="week1.html" class="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg shadow-green-900/30">
+                    Start Week 1 →
+                </a>
+                <a href="workbooks.html" class="border border-neutral-700 hover:border-neutral-500 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                    Download Workbooks
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-green-500">5</p>
+                    <p class="text-neutral-500 text-sm">Weeks</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-green-500">22</p>
+                    <p class="text-neutral-500 text-sm">Doctrines</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-green-500">300+</p>
+                    <p class="text-neutral-500 text-sm">Scripture References</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-green-500">5</p>
+                    <p class="text-neutral-500 text-sm">Hours Total</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section id="curriculum" class="py-24 bg-neutral-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">The Curriculum</h2>
+                <p class="text-neutral-400 max-w-2xl mx-auto">
+                    Each week builds on the last, taking you from the foundations of Scripture 
+                    to the glorious hope of eternity with Christ.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Week 1 -->
+                <a href="week1.html" class="card-hover bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-6 border border-neutral-800 hover:border-green-700/50 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            1
+                        </div>
+                        <div>
+                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 1</p>
+                            <h3 class="text-xl font-bold text-white">Foundations</h3>
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">
+                        The Scriptures, The Trinity, Angels & Demons
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-900/30 text-green-400 px-2 py-1 rounded text-xs">Doctrines A-C</span>
+                        <span class="bg-neutral-800 text-neutral-400 px-2 py-1 rounded text-xs">60 min</span>
+                    </div>
+                </a>
+
+                <!-- Week 2 -->
+                <a href="week2.html" class="card-hover bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-6 border border-neutral-800 hover:border-green-700/50 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            2
+                        </div>
+                        <div>
+                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 2</p>
+                            <h3 class="text-xl font-bold text-white">Human Nature</h3>
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">
+                        Man Created & Fallen, Biblical Roles, Christ's First Advent
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-900/30 text-green-400 px-2 py-1 rounded text-xs">Doctrines D-F</span>
+                        <span class="bg-neutral-800 text-neutral-400 px-2 py-1 rounded text-xs">70 min</span>
+                    </div>
+                </a>
+
+                <!-- Week 3 -->
+                <a href="week3.html" class="card-hover bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-6 border border-neutral-800 hover:border-purple-700/50 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            3
+                        </div>
+                        <div>
+                            <p class="text-purple-500 text-xs font-bold uppercase tracking-wider">Week 3</p>
+                            <h3 class="text-xl font-bold text-white">Salvation</h3>
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">
+                        Through Christ, Extent, Sanctification, Security, Assurance
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-900/30 text-purple-400 px-2 py-1 rounded text-xs">Doctrines G-K</span>
+                        <span class="bg-neutral-800 text-neutral-400 px-2 py-1 rounded text-xs">64 min</span>
+                    </div>
+                </a>
+
+                <!-- Week 4 -->
+                <a href="week4.html" class="card-hover bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-6 border border-neutral-800 hover:border-cyan-700/50 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            4
+                        </div>
+                        <div>
+                            <p class="text-cyan-500 text-xs font-bold uppercase tracking-wider">Week 4</p>
+                            <h3 class="text-xl font-bold text-white">Christian Life</h3>
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">
+                        Holy Spirit, The Church, Ordinances, Walk, Service
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-cyan-900/30 text-cyan-400 px-2 py-1 rounded text-xs">Doctrines L-P</span>
+                        <span class="bg-neutral-800 text-neutral-400 px-2 py-1 rounded text-xs">64 min</span>
+                    </div>
+                </a>
+
+                <!-- Week 5 -->
+                <a href="week5.html" class="card-hover bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-2xl p-6 border border-neutral-800 hover:border-amber-700/50 group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            5
+                        </div>
+                        <div>
+                            <p class="text-amber-500 text-xs font-bold uppercase tracking-wider">Week 5</p>
+                            <h3 class="text-xl font-bold text-white">Future Things</h3>
+                        </div>
+                    </div>
+                    <p class="text-neutral-400 text-sm mb-4">
+                        Commission, Rapture, Tribulation, Second Coming, Eternity
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-amber-900/30 text-amber-400 px-2 py-1 rounded text-xs">Doctrines Q-V</span>
+                        <span class="bg-neutral-800 text-neutral-400 px-2 py-1 rounded text-xs">66 min</span>
+                    </div>
+                </a>
+
+                <!-- All Doctrines Card -->
+                <div class="bg-gradient-to-br from-green-900/20 to-green-950/20 rounded-2xl p-6 border border-green-800/30">
+                    <h3 class="text-lg font-bold text-white mb-4">All 22 Doctrines</h3>
+                    <div class="text-xs text-neutral-400 space-y-1">
+                        <p><span class="text-green-500 font-bold">A.</span> The Scriptures</p>
+                        <p><span class="text-green-500 font-bold">B.</span> The Godhead (Trinity)</p>
+                        <p><span class="text-green-500 font-bold">C.</span> Angels (Fallen & Unfallen)</p>
+                        <p><span class="text-green-500 font-bold">D.</span> Man, Created & Fallen</p>
+                        <p><span class="text-green-500 font-bold">E.</span> Biblical Roles</p>
+                        <p><span class="text-green-500 font-bold">F.</span> The First Advent</p>
+                        <p><span class="text-purple-500 font-bold">G.</span> Salvation Through Christ</p>
+                        <p><span class="text-purple-500 font-bold">H.</span> Extent of Salvation</p>
+                        <p><span class="text-purple-500 font-bold">I.</span> Sanctification</p>
+                        <p><span class="text-purple-500 font-bold">J.</span> Eternal Security</p>
+                        <p><span class="text-purple-500 font-bold">K.</span> Assurance</p>
+                        <p><span class="text-cyan-500 font-bold">L.</span> The Holy Spirit</p>
+                        <p><span class="text-cyan-500 font-bold">M.</span> The Church</p>
+                        <p><span class="text-cyan-500 font-bold">N.</span> The Ordinances</p>
+                        <p><span class="text-cyan-500 font-bold">O.</span> The Christian Walk</p>
+                        <p><span class="text-cyan-500 font-bold">P.</span> Christian Service</p>
+                        <p><span class="text-amber-500 font-bold">Q.</span> The Great Commission</p>
+                        <p><span class="text-amber-500 font-bold">R.</span> The Rapture</p>
+                        <p><span class="text-amber-500 font-bold">S.</span> The Tribulation</p>
+                        <p><span class="text-amber-500 font-bold">T.</span> The Second Coming</p>
+                        <p><span class="text-amber-500 font-bold">U.</span> The Eternal State</p>
+                        <p><span class="text-amber-500 font-bold">V.</span> Stewardship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 bg-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">What You'll Get</h2>
+                <p class="text-neutral-400">Everything you need to study alone or with a group</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-900/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Complete Scripture</h3>
+                    <p class="text-neutral-400 text-sm">Every doctrine backed by comprehensive biblical references from the original ordination document</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-900/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Print Workbooks</h3>
+                    <p class="text-neutral-400 text-sm">Downloadable PDF workbooks with notes sections, discussion questions, and QR codes</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-900/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Discussion Ready</h3>
+                    <p class="text-neutral-400 text-sm">Thoughtful questions for each week designed for small groups or personal reflection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-neutral-950">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-neutral-900 to-neutral-950 rounded-3xl p-8 md:p-12 border border-neutral-800">
+                <h2 class="text-3xl font-bold mb-6 text-center">About This Curriculum</h2>
+                <div class="text-neutral-400 space-y-4">
+                    <p>
+                        <strong class="text-white">Rooted</strong> is a comprehensive Bible study curriculum developed by 
+                        <strong class="text-white">Adetoro Oriaifo</strong>, based on the ordination preparation document 
+                        of <strong class="text-white">Pastor Brian Ellis Bailey</strong>.
+                    </p>
+                    <p>
+                        The curriculum transforms dense theological reference material into an engaging, accessible 
+                        educational experience while maintaining complete theological accuracy and biblical documentation. 
+                        Every doctrine is supported by multiple Scripture references from the original source.
+                    </p>
+                    <p>
+                        Whether you're preparing for ministry, discipling new believers, or deepening your own 
+                        understanding of the faith, Rooted provides a solid foundation in essential Christian doctrine.
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-neutral-800">
+                    <p class="text-neutral-500 text-sm text-center">
+                        "So then, just as you received Christ Jesus as Lord, continue to live your lives in him, 
+                        <strong class="text-green-500">rooted</strong> and built up in him, strengthened in the faith 
+                        as you were taught, and overflowing with thankfulness."
+                    </p>
+                    <p class="text-neutral-600 text-xs text-center mt-2">— Colossians 2:6-7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-gradient-to-b from-neutral-950 to-black">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Get Rooted?</h2>
+            <p class="text-neutral-400 mb-8">Start your journey through 22 essential doctrines today.</p>
+            <a href="week1.html" class="inline-block bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 px-10 py-5 rounded-xl font-bold text-xl transition shadow-lg shadow-green-900/30">
+                Begin Week 1: Foundations →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <svg viewBox="0 0 40 40" style="width: 32px; height: 32px;">
+                        <ellipse cx="20" cy="14" rx="14" ry="11" fill="#2E7D32"/>
+                        <ellipse cx="20" cy="12" rx="11" ry="9" fill="#43A047"/>
+                        <ellipse cx="20" cy="10" rx="8" ry="6" fill="#66BB6A"/>
+                        <path d="M20 36 L20 22" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+                        <rect x="12" y="33" width="16" height="4" rx="1" fill="#F5E6D3"/>
+                    </svg>
+                    <span class="text-white font-bold tracking-wide" style="font-family: Georgia, serif;">ROOTED</span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="index.html" class="text-neutral-400 hover:text-white transition">Home</a>
+                    <a href="week1.html" class="text-neutral-400 hover:text-white transition">Week 1</a>
+                    <a href="week2.html" class="text-neutral-400 hover:text-white transition">Week 2</a>
+                    <a href="week3.html" class="text-neutral-400 hover:text-white transition">Week 3</a>
+                    <a href="week4.html" class="text-neutral-400 hover:text-white transition">Week 4</a>
+                    <a href="week5.html" class="text-neutral-400 hover:text-white transition">Week 5</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-neutral-800 text-center">
+                <p class="text-neutral-500 text-sm">Bible Study Curriculum by Adetoro Oriaifo</p>
+                <p class="text-neutral-600 text-xs mt-1">Based on the ordination preparation of Pastor Brian Ellis Bailey</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

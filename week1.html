@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooted | Bible Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green-400: #4ade80;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --green-700: #15803d;
+            --green-800: #166534;
+            --green-900: #14532d;
+            
+            --gold-400: #fbbf24;
+            --gold-500: #f59e0b;
+            --gold-600: #d97706;
+            
+            --neutral-50: #fafafa;
+            --neutral-100: #f5f5f5;
+            --neutral-200: #e5e5e5;
+            --neutral-300: #d4d4d4;
+            --neutral-400: #a3a3a3;
+            --neutral-500: #737373;
+            --neutral-600: #525252;
+            --neutral-700: #404040;
+            --neutral-800: #262626;
+            --neutral-900: #171717;
+            --neutral-950: #0a0a0a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--neutral-950);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        /* Landing Hero */
+        .landing-hero {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #000000 0%, #0a0a0a 30%, #171717 60%, #0f1f0a 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Glow effect */
+        .hero-glow {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(ellipse at center, rgba(251, 191, 36, 0.12) 0%, rgba(34, 197, 94, 0.05) 40%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        /* Light beams */
+        .light-beams {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            opacity: 0.06;
+        }
+        
+        .light-beam {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 2px;
+            height: 150%;
+            background: linear-gradient(to top, transparent, rgba(251, 191, 36, 0.8), transparent);
+            transform-origin: center top;
+        }
+        
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.25rem 2rem;
+            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+        }
+        
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        
+        .logo-mini {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 3px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-400);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: white;
+        }
+        
+        .nav-cta {
+            background: var(--green-700);
+            color: white !important;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600 !important;
+            transition: all 0.2s;
+        }
+        
+        .nav-cta:hover {
+            background: var(--green-600);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Content */
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+            padding-top: 80px;
+        }
+        
+        .tree-logo {
+            width: 280px;
+            height: 364px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-description {
+            font-size: 1.15rem;
+            color: var(--neutral-400);
+            max-width: 550px;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+        
+        /* Stats */
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem 2.5rem;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 0 1rem;
+        }
+        
+        .stat:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255,0.1);
+            padding-right: 3rem;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--green-500);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0.25rem;
+        }
+        
+        /* CTA Buttons */
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 1.1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--green-600), var(--green-700));
+            color: white;
+            box-shadow: 0 10px 40px rgba(22, 163, 74, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(22, 163, 74, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--neutral-900);
+            color: var(--neutral-300);
+            border: 1px solid var(--neutral-800);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--neutral-800);
+            color: white;
+        }
+        
+        /* Author */
+        .hero-author {
+            position: absolute;
+            bottom: 2rem;
+            color: var(--neutral-600);
+            font-size: 0.9rem;
+        }
+        
+        .hero-author strong {
+            color: var(--neutral-400);
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--neutral-600);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+        
+        /* Curriculum Section */
+        .curriculum-section {
+            padding: 8rem 2rem;
+            background: var(--neutral-950);
+            position: relative;
+        }
+        
+        .curriculum-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(180deg, #0f1f0a 0%, var(--neutral-950) 100%);
+        }
+        
+        .curriculum-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--neutral-500);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Week Cards */
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .week-card {
+            background: var(--neutral-900);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--neutral-800);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .week-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--green-700);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        
+        .week-card.featured {
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.15), rgba(22, 163, 74, 0.05));
+            border-color: var(--green-800);
+        }
+        
+        .week-badge {
+            display: inline-block;
+            background: var(--neutral-800);
+            color: var(--green-500);
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .week-card.featured .week-badge {
+            background: rgba(22, 163, 74, 0.3);
+        }
+        
+        .week-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .week-subtitle {
+            color: var(--neutral-500);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .week-doctrines {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .doctrine-tag {
+            background: var(--neutral-800);
+            color: var(--neutral-400);
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .week-card.featured .doctrine-tag {
+            background: rgba(255,255,255,0.1);
+            color: var(--neutral-300);
+        }
+        
+        /* Footer */
+        .footer {
+            background: black;
+            color: white;
+            padding: 5rem 2rem 2rem;
+            border-top: 1px solid var(--neutral-900);
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        
+        .footer-brand {
+            max-width: 300px;
+        }
+        
+        .footer-brand .logo-text {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-brand p {
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        
+        .footer-links-group {
+            display: flex;
+            gap: 4rem;
+        }
+        
+        .footer-col h4 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--neutral-400);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-col a {
+            color: var(--neutral-500);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        .footer-col a:hover {
+            color: var(--green-500);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid var(--neutral-900);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            color: var(--neutral-600);
+            font-size: 0.85rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .tree-logo {
+                width: 200px;
+                height: 260px;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+            
+            .stat:not(:last-child) {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                padding-right: 1rem;
+                padding-bottom: 1.5rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .footer-links-group {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing Hero -->
+    <section class="landing-hero">
+        <!-- Glow Effect -->
+        <div class="hero-glow"></div>
+        
+        <!-- Light Beams -->
+        <div class="light-beams">
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(-60deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(-45deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(-30deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(-15deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(0deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(15deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(30deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(45deg);"></div>
+            <div class="light-beam" style="transform: translate(-50%, 0) rotate(60deg);"></div>
+        </div>
+
+            <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <svg viewBox="0 0 40 40" style="width: 36px; height: 36px;">
+                    <ellipse cx="20" cy="14" rx="14" ry="11" fill="#2E7D32"/>
+                    <ellipse cx="20" cy="12" rx="11" ry="9" fill="#43A047"/>
+                    <ellipse cx="20" cy="10" rx="8" ry="6" fill="#66BB6A"/>
+                    <path d="M20 36 L20 22" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M20 26 Q14 22 10 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M20 26 Q26 22 30 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="12" y="33" width="16" height="4" rx="1" fill="#F5E6D3"/>
+                </svg>
+                <span class="text-white font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">ROOTED</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-neutral-400 hover:text-white transition text-sm font-medium">Home</a>
+                <a href="week1.html" class="text-green-500 font-semibold text-sm">Week 1</a>
+                <a href="week2.html" class="text-neutral-400 hover:text-white transition font-medium text-sm">Week 2</a>
+                <a href="week3.html" class="text-neutral-400 hover:text-white transition font-medium text-sm">Week 3</a>
+                <a href="week4.html" class="text-neutral-400 hover:text-white transition font-medium text-sm">Week 4</a>
+                <a href="week5.html" class="text-neutral-400 hover:text-white transition font-medium text-sm">Week 5</a>
+                <a href="workbooks.html" class="text-neutral-400 hover:text-white transition text-sm font-medium">Workbooks</a>
+            </div>
+            <a href="week2.html" class="bg-green-600 hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
+                Next: Week 2 →
+            </a>
+        </div>
+    </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Full Color Realistic Tree Logo SVG -->
+            <svg class="tree-logo" viewBox="0 0 200 260">
+                <defs>
+                    <radialGradient id="glowGold" cx="50%" cy="35%" r="50%">
+                        <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="transparent"/>
+                    </radialGradient>
+                    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#3D2314"/>
+                        <stop offset="50%" stop-color="#5D4037"/>
+                        <stop offset="100%" stop-color="#3D2314"/>
+                    </linearGradient>
+                    <linearGradient id="leafGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1B5E20"/>
+                        <stop offset="100%" stop-color="#2E7D32"/>
+                    </linearGradient>
+                    <linearGradient id="leafGradB" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#2E7D32"/>
+                        <stop offset="100%" stop-color="#43A047"/>
+                    </linearGradient>
+                </defs>
+                
+                <!-- Golden glow -->
+                <ellipse cx="100" cy="80" rx="75" ry="65" fill="url(#glowGold)"/>
+                
+                <!-- Roots -->
+                <path d="M100 175 Q75 172 50 180 Q25 190 5 195" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M100 175 Q125 172 150 180 Q175 190 195 195" stroke="#5D4037" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M100 175 Q80 178 55 188 Q30 198 10 205" stroke="#4A3728" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M100 175 Q120 178 145 188 Q170 198 190 205" stroke="#4A3728" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                
+                <!-- Trunk -->
+                <path d="M100 175 L100 120 Q98 100 100 80" stroke="url(#trunkGrad)" stroke-width="18" fill="none" stroke-linecap="round"/>
+                <path d="M100 130 Q75 115 50 100 Q35 90 25 75" stroke="url(#trunkGrad)" stroke-width="9" fill="none" stroke-linecap="round"/>
+                <path d="M100 130 Q125 115 150 100 Q165 90 175 75" stroke="url(#trunkGrad)" stroke-width="9" fill="none" stroke-linecap="round"/>
+                <path d="M100 110 Q80 95 60 85 Q45 78 35 65" stroke="url(#trunkGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <path d="M100 110 Q120 95 140 85 Q155 78 165 65" stroke="url(#trunkGrad)" stroke-width="5" fill="none" stroke-linecap="round"/>
+                
+                <!-- Foliage -->
+                <ellipse cx="100" cy="50" rx="55" ry="45" fill="url(#leafGradA)"/>
+                <ellipse cx="55" cy="65" rx="35" ry="30" fill="url(#leafGradA)"/>
+                <ellipse cx="145" cy="65" rx="35" ry="30" fill="url(#leafGradA)"/>
+                <ellipse cx="100" cy="42" rx="45" ry="36" fill="url(#leafGradB)"/>
+                <ellipse cx="65" cy="55" rx="28" ry="24" fill="url(#leafGradB)"/>
+                <ellipse cx="135" cy="55" rx="28" ry="24" fill="url(#leafGradB)"/>
+                <ellipse cx="100" cy="32" rx="35" ry="28" fill="#43A047"/>
+                <circle cx="80" cy="35" r="12" fill="#66BB6A" opacity="0.7"/>
+                <circle cx="120" cy="38" r="10" fill="#66BB6A" opacity="0.7"/>
+                
+                <!-- Bible -->
+                <rect x="60" y="162" width="80" height="12" rx="2" fill="#F5E6D3" stroke="#C4A574" stroke-width="1"/>
+                <line x1="100" y1="165" x2="100" y2="172" stroke="#8B6914" stroke-width="1.5"/>
+                <line x1="96" y1="168" x2="104" y2="168" stroke="#8B6914" stroke-width="1.5"/>
+                
+                <!-- Text -->
+                <text x="100" y="225" text-anchor="middle" font-family="Playfair Display, serif" font-size="28" font-weight="700" fill="white" letter-spacing="4">ROOTED</text>
+                <text x="100" y="245" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#d97706" letter-spacing="3">BIBLE STUDY</text>
+            </svg>
+            
+            <p class="hero-description">
+                Grow deep in God's Word with a comprehensive study of foundational 
+                Christian doctrines. Build your faith on solid ground.
+            </p>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Weeks</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">22</div>
+                    <div class="stat-label">Doctrines</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">60+</div>
+                    <div class="stat-label">Scriptures</div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="hero-actions">
+                <a href="#curriculum" class="btn btn-primary">
+                    Start Your Journey
+                    <span>→</span>
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <p class="hero-author">By <strong>Adetoro Oriaifo</strong></p>
+
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum-section" id="curriculum">
+        <div class="curriculum-container">
+            <div class="section-header">
+                <h2>The Curriculum</h2>
+                <p>
+                    A 5-week journey through 22 foundational doctrines, designed to help you 
+                    grow deep roots in your faith.
+                </p>
+            </div>
+
+            <div class="weeks-grid">
+                <!-- Week 1 - Featured -->
+                <div class="week-card featured">
+                    <span class="week-badge">Week 1</span>
+                    <h3>Foundations</h3>
+                    <p class="week-subtitle">Scripture • Trinity • Angels</p>
+                    <div class="week-doctrines">
+                        <span class="doctrine-tag">A. The Scriptures</span>
+                        <span class="doctrine-tag">B. The Godhead</span>
+                        <span class="doctrine-tag">C. Angels & Demons</span>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="week-card">
+                    <span class="week-badge">Week 2</span>
+                    <h3>Human Nature</h3>
+                    <p class="week-subtitle">Man • Sin • Salvation</p>
+                    <div class="week-doctrines">
+                        <span class="doctrine-tag">D. Man</span>
+                        <span class="doctrine-tag">E. Sin</span>
+                        <span class="doctrine-tag">F. Salvation</span>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="week-card">
+                    <span class="week-badge">Week 3</span>
+                    <h3>Christ's Work</h3>
+                    <p class="week-subtitle">Atonement • Grace • Faith • Justification</p>
+                    <div class="week-doctrines">
+                        <span class="doctrine-tag">G-J. Redemption</span>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="week-card">
+                    <span class="week-badge">Week 4</span>
+                    <h3>Christian Life</h3>
+                    <p class="week-subtitle">Sanctification • Church • Ordinances</p>
+                    <div class="week-doctrines">
+                        <span class="doctrine-tag">K-P. Growth</span>
+                    </div>
+                </div>
+
+                <!-- Week 5 -->
+                <div class="week-card">
+                    <span class="week-badge">Week 5</span>
+                    <h3>Future Things</h3>
+                    <p class="week-subtitle">Rapture • Tribulation • Millennium</p>
+                    <div class="week-doctrines">
+                        <span class="doctrine-tag">Q-V. Eschatology</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-mini" viewBox="0 0 40 40" style="width: 36px; height: 36px;">
+                            <ellipse cx="20" cy="14" rx="14" ry="11" fill="#2E7D32"/>
+                            <ellipse cx="20" cy="12" rx="11" ry="9" fill="#43A047"/>
+                            <path d="M20 36 L20 22" stroke="#5D4037" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M20 26 Q14 22 10 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M20 26 Q26 22 30 18" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+                            <rect x="12" y="33" width="16" height="4" rx="1" fill="#F5E6D3"/>
+                        </svg>
+                        <span class="logo-text">ROOTED</span>
+                    </div>
+                    <p style="margin-top: 1rem;">
+                        A comprehensive Bible study curriculum designed to help you grow deep roots 
+                        in God's Word.
+                    </p>
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Curriculum</h4>
+                        <ul>
+                            <li><a href="#">Week 1: Foundations</a></li>
+                            <li><a href="#">Week 2: Human Nature</a></li>
+                            <li><a href="#">Week 3: Christ's Work</a></li>
+                            <li><a href="#">Week 4: Christian Life</a></li>
+                            <li><a href="#">Week 5: Future Things</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Study Guides</a></li>
+                            <li><a href="#">Audio Lessons</a></li>
+                            <li><a href="#">Scripture Index</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rooted Bible Study. All rights reserved.</p>
+                <p>By Adetoro Oriaifo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
