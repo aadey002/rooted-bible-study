@@ -1,0 +1,35 @@
+{
+    "name": "WISDOM Bible Study Curriculum",
+    "short_name": "WISDOM",
+    "description": "A comprehensive 5-week Bible study covering 22 essential Christian doctrines",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1c1917",
+    "theme_color": "#1c1917",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en-US",
+    "categories": ["education", "books", "lifestyle"],
+    "icons": [
+        {
+            "src": "images/wisdom_icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/wisdom_icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/wisdom_website.png",
+            "sizes": "1200x630",
+            "type": "image/png",
+            "label": "WISDOM Bible Study Homepage"
+        }
+    ]
+}

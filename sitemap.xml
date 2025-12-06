@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://yourdomain.com/</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://yourdomain.com/images/wisdom_website.png</image:loc>
+            <image:title>WISDOM Bible Study Curriculum</image:title>
+            <image:caption>5-Week comprehensive Bible study covering 22 Christian doctrines</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Week 1: Foundations -->
+    <url>
+        <loc>https://yourdomain.com/week1.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Week 2: Human Nature -->
+    <url>
+        <loc>https://yourdomain.com/week2.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Week 3: Salvation -->
+    <url>
+        <loc>https://yourdomain.com/week3.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Week 4: Christian Life -->
+    <url>
+        <loc>https://yourdomain.com/week4.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Week 5: Future Things -->
+    <url>
+        <loc>https://yourdomain.com/week5.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Workbooks -->
+    <url>
+        <loc>https://yourdomain.com/workbooks.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://yourdomain.com/images/wisdom_book.png</image:loc>
+            <image:title>WISDOM Bible Study Workbooks</image:title>
+            <image:caption>Free downloadable PDF workbooks for each week</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://yourdomain.com/contact.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Apparel -->
+    <url>
+        <loc>https://yourdomain.com/apparel.html</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- PDF Workbooks (for direct download indexing) -->
+    <url>
+        <loc>https://yourdomain.com/pdfs/Week1_Workbook.pdf</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/pdfs/Week2_Workbook.pdf</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/pdfs/Week3_Workbook.pdf</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/pdfs/Week4_Workbook.pdf</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/pdfs/Week5_Workbook.pdf</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>

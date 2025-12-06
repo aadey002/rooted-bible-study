@@ -1,0 +1,43 @@
+# robots.txt for WISDOM Bible Study Website
+# https://yourdomain.com
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Allow specific crawlers for better indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow crawling of any sensitive directories (none currently)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow crawling of all image files
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Allow crawling of PDF workbooks
+User-agent: *
+Allow: /pdfs/
+
+# Crawl-delay suggestion (optional, remove if not needed)
+# Crawl-delay: 1
