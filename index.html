@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://yourdomain.com/">
     <meta property="og:title" content="WISDOM Bible Study | 5-Week Christian Doctrine Curriculum">
     <meta property="og:description" content="Discover deep biblical truths with WISDOM - a comprehensive 5-week Bible study covering 22 essential Christian doctrines. Free workbooks and video lessons.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta property="og:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="WISDOM Bible Study">
@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="https://yourdomain.com/">
     <meta name="twitter:title" content="WISDOM Bible Study | 5-Week Christian Doctrine Curriculum">
     <meta name="twitter:description" content="Discover deep biblical truths with WISDOM - a comprehensive 5-week Bible study covering 22 essential Christian doctrines. Free workbooks and video lessons.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta name="twitter:creator" content="@YourHandle">
     
     <!-- Favicon & App Icons -->
@@ -44,8 +44,8 @@
     <link rel="manifest" href="manifest.json">
     
     <!-- Theme Color -->
-    <meta name="theme-color" content="#1c1917">
-    <meta name="msapplication-TileColor" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
+    <meta name="msapplication-TileColor" content="#FDF8F3">
     
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">
@@ -217,43 +217,79 @@
     
     <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: {
+                        DEFAULT: '#F3E7D3',
+                        light: '#F8F2E6',
+                    },
+                    beige: {
+                        DEFAULT: '#E9DCC4',
+                        dark: '#DED0B8',
+                    },
+                    forest: {
+                        DEFAULT: '#2D5A3D',
+                        light: '#3A7D4A',
+                        dark: '#1E4A2D',
+                    },
+                    brown: {
+                        DEFAULT: '#4A3A28',
+                        dark: '#4A3A28',
+                        medium: '#7B5E3C',
+                        light: '#C6A77D',
+                        accent: '#7B5E3C',
+                        warm: '#7B5E3C',
+                    }
+                },
+                fontFamily: {
+                    cinzel: ['Cinzel', 'serif'],
+                    inter: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         .font-cinzel { font-family: 'Cinzel', serif; }
         .font-inter { font-family: 'Inter', sans-serif; }
-        .gradient-gold {
+        .bg-gradient-to-r from-brown-warm via-brown-light to-brown-warm bg-clip-text text-transparent {
             background: linear-gradient(135deg, #D4A84B, #F5D78E, #C9983A);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); }
-        .glow { box-shadow: 0 0 80px rgba(34, 197, 94, 0.2); }
+        .shadow-2xl shadow-brown-warm/20 { box-shadow: 0 0 80px rgba(34, 197, 94, 0.2); }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-b from-stone-900 via-stone-800 to-stone-900 text-white font-inter">
+<body class="bg-cream-light text-brown font-inter">
     
     <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-green-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-forest focus:text-brown focus:px-4 focus:py-2 focus:rounded-lg">
         Skip to main content
     </a>
     
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-900/95 backdrop-blur-lg border-b border-stone-700" role="navigation" aria-label="Main navigation">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-lg border-b border-beige-dark" role="navigation" aria-label="Main navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="font-cinzel text-xl font-bold tracking-wider text-amber-100">WISDOM</span>
+                <span class="font-cinzel text-xl font-bold tracking-wider text-brown">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-green-500 font-semibold text-sm">Home</a>
-                <a href="#curriculum" class="text-stone-400 hover:text-amber-200 transition text-sm">Curriculum</a>
-                <a href="#about" class="text-stone-400 hover:text-amber-200 transition text-sm">About</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Workbooks</a>
-                <a href="apparel.html" class="text-stone-400 hover:text-amber-200 transition text-sm">ROOTED Apparel</a>
-                <a href="contact.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Contact</a>
+                <a href="index.html" class="text-forest font-semibold text-sm">Home</a>
+                <a href="#curriculum" class="text-brown-light hover:text-forest transition text-sm">Curriculum</a>
+                <a href="#about" class="text-brown-light hover:text-forest transition text-sm">About</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-forest transition text-sm">Workbooks</a>
+                <a href="apparel.html" class="text-brown-light hover:text-forest transition text-sm">ROOTED Apparel</a>
+                <a href="contact.html" class="text-brown-light hover:text-forest transition text-sm">Contact</a>
             </div>
-            <a href="week1.html" class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition text-white">
+            <a href="week1.html" class="bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-5 py-2 rounded-lg text-sm font-semibold transition text-white">
                 Start Learning
             </a>
         </div>
@@ -264,60 +300,60 @@
     <main id="main-content" role="main">
     
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 relative overflow-hidden min-h-screen flex items-center" aria-labelledby="hero-heading">
-        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-green-900/20 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-900/10 rounded-full blur-3xl"></div>
+    <section class="pt-24 pb-16 relative overflow-hidden min-h-screen flex items-center bg-gradient-to-b from-cream-light to-cream" aria-labelledby="hero-heading">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-forest/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brown-warm/10 rounded-full blur-3xl"></div>
         
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left">
                     <h1 id="hero-heading" class="font-cinzel text-5xl md:text-7xl font-bold mb-6 tracking-wide">
-                        <span class="gradient-gold">WISDOM</span>
+                        <span class="bg-gradient-to-r from-brown-warm via-brown-light to-brown-warm bg-clip-text text-transparent">WISDOM</span>
                     </h1>
-                    <p class="text-xl md:text-2xl text-amber-100/90 mb-4">Bible Study Curriculum</p>
-                    <p class="text-stone-400 mb-8 max-w-lg">
+                    <p class="text-xl md:text-2xl text-brown/90 mb-4">Bible Study Curriculum</p>
+                    <p class="text-brown-light mb-8 max-w-lg">
                         A 5-week journey through 22 essential doctrines of the Christian faith. 
                         Build your faith on an unshakeable foundation rooted in Scripture.
                     </p>
                     
                     <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-12">
-                        <a href="week1.html" class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-8 py-4 rounded-xl font-bold text-lg transition text-white shadow-lg shadow-green-900/30">
+                        <a href="week1.html" class="bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-8 py-4 rounded-xl font-bold text-lg transition text-white shadow-lg shadow-forest/30">
                             Start Week 1 →
                         </a>
-                        <a href="workbooks.html" class="border-2 border-stone-600 hover:border-amber-700 hover:bg-stone-800 px-8 py-4 rounded-xl font-semibold text-lg transition text-amber-100">
+                        <a href="workbooks.html" class="border-2 border-beige hover:border-forest hover:bg-beige px-8 py-4 rounded-xl font-semibold text-lg transition text-brown">
                             Download Workbooks
                         </a>
                     </div>
                     
                     <div class="flex flex-wrap justify-center lg:justify-start gap-8">
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-green-500">5</p>
-                            <p class="text-stone-500 text-sm">Weeks</p>
+                            <p class="text-3xl font-bold text-forest">5</p>
+                            <p class="text-brown-light text-sm">Weeks</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-green-500">22</p>
-                            <p class="text-stone-500 text-sm">Doctrines</p>
+                            <p class="text-3xl font-bold text-forest">22</p>
+                            <p class="text-brown-light text-sm">Doctrines</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-green-500">300+</p>
-                            <p class="text-stone-500 text-sm">Scriptures</p>
+                            <p class="text-3xl font-bold text-forest">300+</p>
+                            <p class="text-brown-light text-sm">Scriptures</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="flex justify-center lg:justify-end">
-                    <img src="images/wisdom_app_icon.png" alt="Wisdom Tree" class="w-full max-w-md rounded-2xl glow">
+                    <img src="images/wisdom_app_icon.png" alt="Wisdom Tree" class="w-full max-w-md rounded-2xl shadow-2xl shadow-brown-warm/20">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Curriculum Overview -->
-    <section id="curriculum" class="py-24 bg-stone-800/50">
+    <section id="curriculum" class="py-24 bg-beige">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="font-cinzel text-4xl font-bold mb-4 text-amber-100">The Curriculum</h2>
-                <p class="text-stone-400 max-w-2xl mx-auto">
+                <h2 class="font-cinzel text-4xl font-bold mb-4 text-brown">The Curriculum</h2>
+                <p class="text-brown-light max-w-2xl mx-auto">
                     Each week builds on the last, taking you from the foundations of Scripture 
                     to the glorious hope of eternity with Christ.
                 </p>
@@ -325,111 +361,111 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Week 1 -->
-                <a href="week1.html" class="card-hover bg-stone-800 rounded-2xl p-6 border border-stone-700 hover:border-green-700">
+                <a href="week1.html" class="card-hover bg-beige rounded-2xl p-6 border border-beige-dark hover:border-forest-700">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-amber-100 font-bold text-xl">1</div>
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold text-xl">1</div>
                         <div>
-                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 1</p>
-                            <h3 class="text-xl font-bold text-amber-100">Foundations</h3>
+                            <p class="text-forest text-xs font-bold uppercase tracking-wider">Week 1</p>
+                            <h3 class="text-xl font-bold text-brown">Foundations</h3>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm mb-4">The Scriptures, The Trinity, Angels & Demons</p>
+                    <p class="text-brown-light text-sm mb-4">The Scriptures, The Trinity, Angels & Demons</p>
                     <div class="flex gap-2">
                         <span class="bg-green-900/50 text-green-400 px-2 py-1 rounded text-xs">Doctrines A-C</span>
-                        <span class="bg-stone-700 text-stone-400 px-2 py-1 rounded text-xs">60 min</span>
+                        <span class="bg-beige text-brown-accent-light px-2 py-1 rounded text-xs">60 min</span>
                     </div>
                 </a>
 
                 <!-- Week 2 -->
-                <a href="week2.html" class="card-hover bg-stone-800 rounded-2xl p-6 border border-stone-700 hover:border-green-700">
+                <a href="week2.html" class="card-hover bg-beige rounded-2xl p-6 border border-beige-dark hover:border-forest-700">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-amber-100 font-bold text-xl">2</div>
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold text-xl">2</div>
                         <div>
-                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 2</p>
-                            <h3 class="text-xl font-bold text-amber-100">Human Nature</h3>
+                            <p class="text-forest text-xs font-bold uppercase tracking-wider">Week 2</p>
+                            <h3 class="text-xl font-bold text-brown">Human Nature</h3>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm mb-4">Man Created & Fallen, Biblical Roles, First Advent</p>
+                    <p class="text-brown-light text-sm mb-4">Man Created & Fallen, Biblical Roles, First Advent</p>
                     <div class="flex gap-2">
                         <span class="bg-green-900/50 text-green-400 px-2 py-1 rounded text-xs">Doctrines D-F</span>
-                        <span class="bg-stone-700 text-stone-400 px-2 py-1 rounded text-xs">70 min</span>
+                        <span class="bg-beige text-brown-accent-light px-2 py-1 rounded text-xs">70 min</span>
                     </div>
                 </a>
 
                 <!-- Week 3 -->
-                <a href="week3.html" class="card-hover bg-stone-800 rounded-2xl p-6 border border-stone-700 hover:border-green-700">
+                <a href="week3.html" class="card-hover bg-beige rounded-2xl p-6 border border-beige-dark hover:border-forest-700">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-amber-100 font-bold text-xl">3</div>
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold text-xl">3</div>
                         <div>
-                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 3</p>
-                            <h3 class="text-xl font-bold text-amber-100">Salvation</h3>
+                            <p class="text-forest text-xs font-bold uppercase tracking-wider">Week 3</p>
+                            <h3 class="text-xl font-bold text-brown">Salvation</h3>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm mb-4">Through Christ, Sanctification, Security, Assurance</p>
+                    <p class="text-brown-light text-sm mb-4">Through Christ, Sanctification, Security, Assurance</p>
                     <div class="flex gap-2">
                         <span class="bg-green-900/50 text-green-400 px-2 py-1 rounded text-xs">Doctrines G-K</span>
-                        <span class="bg-stone-700 text-stone-400 px-2 py-1 rounded text-xs">64 min</span>
+                        <span class="bg-beige text-brown-accent-light px-2 py-1 rounded text-xs">64 min</span>
                     </div>
                 </a>
 
                 <!-- Week 4 -->
-                <a href="week4.html" class="card-hover bg-stone-800 rounded-2xl p-6 border border-stone-700 hover:border-green-700">
+                <a href="week4.html" class="card-hover bg-beige rounded-2xl p-6 border border-beige-dark hover:border-forest-700">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-amber-100 font-bold text-xl">4</div>
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold text-xl">4</div>
                         <div>
-                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 4</p>
-                            <h3 class="text-xl font-bold text-amber-100">Christian Life</h3>
+                            <p class="text-forest text-xs font-bold uppercase tracking-wider">Week 4</p>
+                            <h3 class="text-xl font-bold text-brown">Christian Life</h3>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm mb-4">Holy Spirit, The Church, Ordinances, Walk, Service</p>
+                    <p class="text-brown-light text-sm mb-4">Holy Spirit, The Church, Ordinances, Walk, Service</p>
                     <div class="flex gap-2">
                         <span class="bg-green-900/50 text-green-400 px-2 py-1 rounded text-xs">Doctrines L-P</span>
-                        <span class="bg-stone-700 text-stone-400 px-2 py-1 rounded text-xs">64 min</span>
+                        <span class="bg-beige text-brown-accent-light px-2 py-1 rounded text-xs">64 min</span>
                     </div>
                 </a>
 
                 <!-- Week 5 -->
-                <a href="week5.html" class="card-hover bg-stone-800 rounded-2xl p-6 border border-stone-700 hover:border-green-700">
+                <a href="week5.html" class="card-hover bg-beige rounded-2xl p-6 border border-beige-dark hover:border-forest-700">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-amber-100 font-bold text-xl">5</div>
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold text-xl">5</div>
                         <div>
-                            <p class="text-green-500 text-xs font-bold uppercase tracking-wider">Week 5</p>
-                            <h3 class="text-xl font-bold text-amber-100">Future Things</h3>
+                            <p class="text-forest text-xs font-bold uppercase tracking-wider">Week 5</p>
+                            <h3 class="text-xl font-bold text-brown">Future Things</h3>
                         </div>
                     </div>
-                    <p class="text-stone-400 text-sm mb-4">Commission, Rapture, Tribulation, Second Coming, Eternity</p>
+                    <p class="text-brown-light text-sm mb-4">Commission, Rapture, Tribulation, Second Coming, Eternity</p>
                     <div class="flex gap-2">
                         <span class="bg-green-900/50 text-green-400 px-2 py-1 rounded text-xs">Doctrines Q-V</span>
-                        <span class="bg-stone-700 text-stone-400 px-2 py-1 rounded text-xs">66 min</span>
+                        <span class="bg-beige text-brown-accent-light px-2 py-1 rounded text-xs">66 min</span>
                     </div>
                 </a>
 
                 <!-- All Doctrines -->
-                <div class="bg-stone-800/50 rounded-2xl p-6 border border-amber-900/30">
-                    <h3 class="text-lg font-bold text-amber-100 mb-4">All 22 Doctrines</h3>
-                    <div class="text-xs text-stone-400 space-y-1 columns-2">
-                        <p><span class="text-green-500 font-bold">A.</span> The Scriptures</p>
-                        <p><span class="text-green-500 font-bold">B.</span> The Trinity</p>
-                        <p><span class="text-green-500 font-bold">C.</span> Angels</p>
-                        <p><span class="text-green-500 font-bold">D.</span> Man</p>
-                        <p><span class="text-green-500 font-bold">E.</span> Biblical Roles</p>
-                        <p><span class="text-green-500 font-bold">F.</span> First Advent</p>
-                        <p><span class="text-green-500 font-bold">G.</span> Salvation</p>
-                        <p><span class="text-green-500 font-bold">H.</span> Extent</p>
-                        <p><span class="text-green-500 font-bold">I.</span> Sanctification</p>
-                        <p><span class="text-green-500 font-bold">J.</span> Security</p>
-                        <p><span class="text-green-500 font-bold">K.</span> Assurance</p>
-                        <p><span class="text-green-500 font-bold">L.</span> Holy Spirit</p>
-                        <p><span class="text-green-500 font-bold">M.</span> The Church</p>
-                        <p><span class="text-green-500 font-bold">N.</span> Ordinances</p>
-                        <p><span class="text-green-500 font-bold">O.</span> Christian Walk</p>
-                        <p><span class="text-green-500 font-bold">P.</span> Service</p>
-                        <p><span class="text-green-500 font-bold">Q.</span> Commission</p>
-                        <p><span class="text-green-500 font-bold">R.</span> Rapture</p>
-                        <p><span class="text-green-500 font-bold">S.</span> Tribulation</p>
-                        <p><span class="text-green-500 font-bold">T.</span> Second Coming</p>
-                        <p><span class="text-green-500 font-bold">U.</span> Eternal State</p>
-                        <p><span class="text-green-500 font-bold">V.</span> Stewardship</p>
+                <div class="bg-beige rounded-2xl p-6 border border-amber-900/30">
+                    <h3 class="text-lg font-bold text-brown mb-4">All 22 Doctrines</h3>
+                    <div class="text-xs text-brown-light space-y-1 columns-2">
+                        <p><span class="text-forest font-bold">A.</span> The Scriptures</p>
+                        <p><span class="text-forest font-bold">B.</span> The Trinity</p>
+                        <p><span class="text-forest font-bold">C.</span> Angels</p>
+                        <p><span class="text-forest font-bold">D.</span> Man</p>
+                        <p><span class="text-forest font-bold">E.</span> Biblical Roles</p>
+                        <p><span class="text-forest font-bold">F.</span> First Advent</p>
+                        <p><span class="text-forest font-bold">G.</span> Salvation</p>
+                        <p><span class="text-forest font-bold">H.</span> Extent</p>
+                        <p><span class="text-forest font-bold">I.</span> Sanctification</p>
+                        <p><span class="text-forest font-bold">J.</span> Security</p>
+                        <p><span class="text-forest font-bold">K.</span> Assurance</p>
+                        <p><span class="text-forest font-bold">L.</span> Holy Spirit</p>
+                        <p><span class="text-forest font-bold">M.</span> The Church</p>
+                        <p><span class="text-forest font-bold">N.</span> Ordinances</p>
+                        <p><span class="text-forest font-bold">O.</span> Christian Walk</p>
+                        <p><span class="text-forest font-bold">P.</span> Service</p>
+                        <p><span class="text-forest font-bold">Q.</span> Commission</p>
+                        <p><span class="text-forest font-bold">R.</span> Rapture</p>
+                        <p><span class="text-forest font-bold">S.</span> Tribulation</p>
+                        <p><span class="text-forest font-bold">T.</span> Second Coming</p>
+                        <p><span class="text-forest font-bold">U.</span> Eternal State</p>
+                        <p><span class="text-forest font-bold">V.</span> Stewardship</p>
                     </div>
                 </div>
             </div>
@@ -437,14 +473,14 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-stone-900">
+    <section id="about" class="py-24 bg-cream">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-stone-800 rounded-3xl p-8 md:p-12 border border-stone-700">
-                <h2 class="font-cinzel text-3xl font-bold mb-6 text-center text-amber-100">About This Curriculum</h2>
-                <div class="text-stone-400 space-y-4">
+            <div class="bg-beige rounded-3xl p-8 md:p-12 border border-beige-dark">
+                <h2 class="font-cinzel text-3xl font-bold mb-6 text-center text-brown">About This Curriculum</h2>
+                <div class="text-brown-light space-y-4">
                     <p>
-                        <strong class="text-amber-100">Wisdom</strong> is a comprehensive Bible study curriculum 
-                        by <strong class="text-amber-100">Pastor Brian Bailey</strong>, covering 22 essential 
+                        <strong class="text-brown">Wisdom</strong> is a comprehensive Bible study curriculum 
+                        by <strong class="text-brown">Pastor Brian Bailey</strong>, covering 22 essential 
                         doctrines of the Christian faith.
                     </p>
                     <p>
@@ -452,11 +488,11 @@
                         understanding of the faith, this curriculum provides a solid foundation rooted in Scripture.
                     </p>
                 </div>
-                <div class="mt-8 pt-8 border-t border-stone-700">
-                    <p class="text-stone-500 text-sm text-center italic">
+                <div class="mt-8 pt-8 border-t border-beige-dark">
+                    <p class="text-brown-light text-sm text-center italic">
                         "The fear of the LORD is the beginning of wisdom, and the knowledge of the Holy One is understanding."
                     </p>
-                    <p class="text-green-500 text-xs text-center mt-2 font-semibold">— Proverbs 9:10</p>
+                    <p class="text-forest text-xs text-center mt-2 font-semibold">— Proverbs 9:10</p>
                 </div>
             </div>
         </div>
@@ -465,64 +501,64 @@
     <!-- CTA -->
     <section class="py-24 bg-gradient-to-b from-stone-900 to-stone-950">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="font-cinzel text-4xl font-bold mb-4 text-amber-100">Ready to Begin?</h2>
-            <p class="text-stone-400 mb-8">Start your journey through 22 essential doctrines today.</p>
-            <a href="week1.html" class="inline-block bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-10 py-5 rounded-xl font-bold text-xl transition text-white shadow-lg shadow-green-900/30">
+            <h2 class="font-cinzel text-4xl font-bold mb-4 text-brown">Ready to Begin?</h2>
+            <p class="text-brown-light mb-8">Start your journey through 22 essential doctrines today.</p>
+            <a href="week1.html" class="inline-block bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-10 py-5 rounded-xl font-bold text-xl transition text-brown shadow-lg shadow-warm">
                 Begin Week 1: Foundations →
             </a>
         </div>
     </section>
 
         <!-- Connect Section -->
-    <section class="py-20 bg-stone-900/50">
+    <section class="py-20 bg-cream/50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="font-cinzel text-3xl font-bold text-amber-100 mb-4">Stay Connected</h2>
-                <p class="text-stone-400">Join our community and never miss an update</p>
+                <h2 class="font-cinzel text-3xl font-bold text-brown mb-4">Stay Connected</h2>
+                <p class="text-brown-light">Join our community and never miss an update</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 
                 <!-- Contact Pastor Bailey -->
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-6 text-center">
+                <div class="bg-beige/60 border border-beige-dark/50 rounded-2xl p-6 text-center">
                     <div class="w-14 h-14 bg-gradient-to-br from-amber-600 to-amber-500 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                         👨‍🏫
                     </div>
-                    <h3 class="font-cinzel text-xl font-bold text-amber-100 mb-3">Contact Pastor Bailey</h3>
+                    <h3 class="font-cinzel text-xl font-bold text-brown mb-3">Contact Pastor Bailey</h3>
                     <div class="space-y-2 text-sm">
-                        <p class="text-stone-400">
+                        <p class="text-brown-light">
                             <span class="text-green-400">📧</span> 
-                            <a href="/cdn-cgi/l/email-protection#daaabba9aeb5a89abfa2bbb7aab6bff4b9b5b7" class="text-green-400 hover:text-green-300"><span class="__cf_email__" data-cfemail="b5c5d4c6c1dac7f5d0cdd4d8c5d9d09bd6dad8">[email&#160;protected]</span></a>
+                            <a href="/cdn-cgi/l/email-protection#daaabba9aeb5a89abfa2bbb7aab6bff4b9b5b7" class="text-green-400 hover:text-forest-300"><span class="__cf_email__" data-cfemail="b5c5d4c6c1dac7f5d0cdd4d8c5d9d09bd6dad8">[email&#160;protected]</span></a>
                         </p>
-                        <p class="text-stone-400">
+                        <p class="text-brown-light">
                             <span class="text-green-400">📱</span> 
-                            <a href="tel:+1234567890" class="text-green-400 hover:text-green-300">(123) 456-7890</a>
+                            <a href="tel:+1234567890" class="text-green-400 hover:text-forest-300">(123) 456-7890</a>
                         </p>
                         <p class="text-stone-600 text-xs">← Replace with actual contact</p>
                     </div>
                 </div>
 
                 <!-- Weekly Zoom Study -->
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-6 text-center">
+                <div class="bg-beige/60 border border-beige-dark/50 rounded-2xl p-6 text-center">
                     <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-500 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                         💻
                     </div>
-                    <h3 class="font-cinzel text-xl font-bold text-amber-100 mb-3">Weekly Zoom Bible Study</h3>
-                    <p class="text-stone-400 text-sm mb-2">Every Sunday @ 7:00 PM EST</p>
-                    <a href="https://zoom.us/j/1234567890" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+                    <h3 class="font-cinzel text-xl font-bold text-brown mb-3">Weekly Zoom Bible Study</h3>
+                    <p class="text-brown-light text-sm mb-2">Every Sunday @ 7:00 PM EST</p>
+                    <a href="https://zoom.us/j/1234567890" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-brown text-sm font-semibold px-4 py-2 rounded-lg transition">
                         Join Zoom
                     </a>
                     <p class="text-stone-600 text-xs mt-2">← Replace with actual link</p>
                 </div>
 
                 <!-- Invite to Speak -->
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-6 text-center">
+                <div class="bg-beige/60 border border-beige-dark/50 rounded-2xl p-6 text-center">
                     <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-amber-500 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                         🎤
                     </div>
-                    <h3 class="font-cinzel text-xl font-bold text-amber-100 mb-3">Invite Pastor Bailey</h3>
-                    <p class="text-stone-400 text-sm mb-3">Book for your church or event</p>
-                    <a href="contact.html" class="inline-block bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+                    <h3 class="font-cinzel text-xl font-bold text-brown mb-3">Invite Pastor Bailey</h3>
+                    <p class="text-brown-light text-sm mb-3">Book for your church or event</p>
+                    <a href="contact.html" class="inline-block bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest text-brown text-sm font-semibold px-4 py-2 rounded-lg transition">
                         Request Speaking
                     </a>
                 </div>
@@ -531,23 +567,23 @@
 
             <!-- Social Links -->
             <div class="mt-12 flex flex-wrap justify-center gap-4">
-                <a href="https://facebook.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-stone-800/60 border border-stone-700/50 rounded-xl px-5 py-3 hover:bg-stone-700/50 transition">
+                <a href="https://facebook.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-beige/60 border border-beige-dark/50 rounded-xl px-5 py-3 hover:bg-beige transition">
                     <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
-                    <span class="text-stone-300 text-sm">@YourHandle</span>
+                    <span class="text-brown-light text-sm">@YourHandle</span>
                 </a>
-                <a href="https://instagram.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-stone-800/60 border border-stone-700/50 rounded-xl px-5 py-3 hover:bg-stone-700/50 transition">
+                <a href="https://instagram.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-beige/60 border border-beige-dark/50 rounded-xl px-5 py-3 hover:bg-beige transition">
                     <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                     </svg>
-                    <span class="text-stone-300 text-sm">@YourHandle</span>
+                    <span class="text-brown-light text-sm">@YourHandle</span>
                 </a>
-                <a href="https://x.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-stone-800/60 border border-stone-700/50 rounded-xl px-5 py-3 hover:bg-stone-700/50 transition">
-                    <svg class="w-5 h-5 text-stone-300" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://x.com/PLACEHOLDER" target="_blank" class="flex items-center gap-2 bg-beige/60 border border-beige-dark/50 rounded-xl px-5 py-3 hover:bg-beige transition">
+                    <svg class="w-5 h-5 text-brown-light" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
-                    <span class="text-stone-300 text-sm">@YourHandle</span>
+                    <span class="text-brown-light text-sm">@YourHandle</span>
                 </a>
             </div>
             <p class="text-stone-600 text-xs text-center mt-3">← Replace social handles with actual accounts</p>
@@ -562,15 +598,15 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-3">
                     <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-8 h-8 rounded-lg">
-                    <span class="font-cinzel text-lg font-bold text-amber-100">WISDOM</span>
+                    <span class="font-cinzel text-lg font-bold text-brown">WISDOM</span>
                 </div>
                 <div class="flex gap-6 text-sm">
-                    <a href="index.html" class="text-stone-500 hover:text-amber-200 transition">Home</a>
-                    <a href="week1.html" class="text-stone-500 hover:text-amber-200 transition">Week 1</a>
-                    <a href="week2.html" class="text-stone-500 hover:text-amber-200 transition">Week 2</a>
-                    <a href="week3.html" class="text-stone-500 hover:text-amber-200 transition">Week 3</a>
-                    <a href="week4.html" class="text-stone-500 hover:text-amber-200 transition">Week 4</a>
-                    <a href="week5.html" class="text-stone-500 hover:text-amber-200 transition">Week 5</a>
+                    <a href="index.html" class="text-brown-light hover:text-forest transition">Home</a>
+                    <a href="week1.html" class="text-brown-light hover:text-forest transition">Week 1</a>
+                    <a href="week2.html" class="text-brown-light hover:text-forest transition">Week 2</a>
+                    <a href="week3.html" class="text-brown-light hover:text-forest transition">Week 3</a>
+                    <a href="week4.html" class="text-brown-light hover:text-forest transition">Week 4</a>
+                    <a href="week5.html" class="text-brown-light hover:text-forest transition">Week 5</a>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-stone-800 text-center">

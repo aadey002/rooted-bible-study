@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://yourdomain.com/apparel.html">
     <meta property="og:title" content="ROOTED Christian Apparel | Faith-Based Clothing">
     <meta property="og:description" content="Shop ROOTED Christian apparel - faith-based t-shirts, hoodies, and merchandise rooted in Scripture.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta property="og:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta property="og:site_name" content="WISDOM Bible Study">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ROOTED Christian Apparel | Faith-Based Clothing">
     <meta name="twitter:description" content="Shop ROOTED Christian apparel - faith-based t-shirts, hoodies, and merchandise.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     
     <!-- Structured Data - Store -->
     <script type="application/ld+json">
@@ -51,12 +51,47 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
     
     <!-- Preconnect & Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: {
+                        DEFAULT: '#F3E7D3',
+                        light: '#F8F2E6',
+                    },
+                    beige: {
+                        DEFAULT: '#E9DCC4',
+                        dark: '#DED0B8',
+                    },
+                    forest: {
+                        DEFAULT: '#2D5A3D',
+                        light: '#3A7D4A',
+                        dark: '#1E4A2D',
+                    },
+                    brown: {
+                        DEFAULT: '#4A3A28',
+                        dark: '#4A3A28',
+                        medium: '#7B5E3C',
+                        light: '#C6A77D',
+                        accent: '#7B5E3C',
+                        warm: '#7B5E3C',
+                    }
+                },
+                fontFamily: {
+                    cinzel: ['Cinzel', 'serif'],
+                    inter: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         .font-cinzel { font-family: 'Cinzel', serif; }
@@ -64,36 +99,37 @@
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-b from-stone-900 via-stone-800 to-stone-900 text-white font-inter">
+<body class="bg-cream-light text-brown font-inter">
     
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-900/95 backdrop-blur-lg border-b border-stone-700">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-lg border-b border-beige-dark">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="font-cinzel text-xl font-bold tracking-wider text-amber-100">WISDOM</span>
+                <span class="font-cinzel text-xl font-bold tracking-wider text-brown">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Home</a>
-                <a href="week1.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Week 1</a>
-                <a href="week2.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Week 2</a>
-                <a href="week3.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Week 3</a>
-                <a href="week4.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Week 4</a>
-                <a href="week5.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Week 5</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Workbooks</a>
-                <a href="apparel.html" class="text-green-500 font-semibold text-sm">ROOTED Apparel</a>
+                <a href="index.html" class="text-brown-light hover:text-forest transition text-sm">Home</a>
+                <a href="week1.html" class="text-brown-light hover:text-forest transition text-sm">Week 1</a>
+                <a href="week2.html" class="text-brown-light hover:text-forest transition text-sm">Week 2</a>
+                <a href="week3.html" class="text-brown-light hover:text-forest transition text-sm">Week 3</a>
+                <a href="week4.html" class="text-brown-light hover:text-forest transition text-sm">Week 4</a>
+                <a href="week5.html" class="text-brown-light hover:text-forest transition text-sm">Week 5</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-forest transition text-sm">Workbooks</a>
+                <a href="apparel.html" class="text-forest font-semibold text-sm">ROOTED Apparel</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="pt-32 pb-16 relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-900/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-forest/10 rounded-full blur-3xl"></div>
         
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h1 class="font-cinzel text-4xl md:text-6xl font-bold mb-4 text-amber-100">ROOTED Apparel</h1>
-            <p class="text-stone-400 text-lg max-w-2xl mx-auto">
+            <h1 class="font-cinzel text-4xl md:text-6xl font-bold mb-4 text-brown">ROOTED Apparel</h1>
+            <p class="text-brown-light text-lg max-w-2xl mx-auto">
                 Wear your faith. Premium clothing featuring the iconic Wisdom tree design.
             </p>
         </div>
@@ -102,32 +138,32 @@
     <!-- Featured Product -->
     <section class="py-12">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="bg-stone-800 rounded-3xl p-8 md:p-12 border border-stone-700 flex flex-col lg:flex-row items-center gap-12">
+            <div class="bg-beige rounded-3xl p-8 md:p-12 border border-beige-dark flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
                     <img src="images/wisdom_app_icon.png" alt="Wisdom Tree Design" class="w-full max-w-sm mx-auto rounded-2xl shadow-2xl">
                 </div>
                 <div class="flex-1 text-center lg:text-left">
-                    <span class="bg-green-700 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Coming Soon</span>
-                    <h2 class="font-cinzel text-3xl font-bold mt-4 mb-4 text-amber-100">The Original Collection</h2>
-                    <p class="text-stone-400 mb-6">
+                    <span class="bg-forest text-brown px-3 py-1 rounded-full text-xs font-bold uppercase">Coming Soon</span>
+                    <h2 class="font-cinzel text-3xl font-bold mt-4 mb-4 text-brown">The Original Collection</h2>
+                    <p class="text-brown-light mb-6">
                         Our signature Wisdom tree design on premium apparel. Each piece reminds you to stay 
                         rooted in God's Word and grow in wisdom every day.
                     </p>
-                    <ul class="text-stone-400 text-sm space-y-2 mb-8">
+                    <ul class="text-brown-light text-sm space-y-2 mb-8">
                         <li class="flex items-center gap-2 justify-center lg:justify-start">
-                            <span class="text-green-500">✓</span> Premium 100% cotton
+                            <span class="text-forest">✓</span> Premium 100% cotton
                         </li>
                         <li class="flex items-center gap-2 justify-center lg:justify-start">
-                            <span class="text-green-500">✓</span> Vibrant, fade-resistant print
+                            <span class="text-forest">✓</span> Vibrant, fade-resistant print
                         </li>
                         <li class="flex items-center gap-2 justify-center lg:justify-start">
-                            <span class="text-green-500">✓</span> Unisex sizing (XS - 3XL)
+                            <span class="text-forest">✓</span> Unisex sizing (XS - 3XL)
                         </li>
                         <li class="flex items-center gap-2 justify-center lg:justify-start">
-                            <span class="text-green-500">✓</span> Ships worldwide
+                            <span class="text-forest">✓</span> Ships worldwide
                         </li>
                     </ul>
-                    <button class="bg-stone-700 text-stone-400 px-8 py-4 rounded-xl font-bold text-lg cursor-not-allowed">
+                    <button class="bg-beige text-brown-accent-light px-8 py-4 rounded-xl font-bold text-lg cursor-not-allowed">
                         Notify Me When Available
                     </button>
                 </div>
@@ -138,54 +174,54 @@
     <!-- Product Grid -->
     <section class="py-16">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="font-cinzel text-2xl font-bold mb-8 text-center text-amber-100">Product Lineup</h2>
+            <h2 class="font-cinzel text-2xl font-bold mb-8 text-center text-brown">Product Lineup</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- T-Shirt -->
-                <div class="card-hover bg-stone-800 rounded-2xl overflow-hidden border border-stone-700">
-                    <div class="aspect-square bg-stone-700 flex items-center justify-center">
+                <div class="card-hover bg-beige rounded-2xl overflow-hidden border border-beige-dark">
+                    <div class="aspect-square bg-beige flex items-center justify-center">
                         <div class="text-6xl">👕</div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-amber-100 mb-1">Classic Tee</h3>
-                        <p class="text-stone-500 text-sm mb-2">100% Cotton</p>
-                        <p class="text-green-500 font-bold">Coming Soon</p>
+                        <h3 class="font-bold text-brown mb-1">Classic Tee</h3>
+                        <p class="text-brown-light text-sm mb-2">100% Cotton</p>
+                        <p class="text-forest font-bold">Coming Soon</p>
                     </div>
                 </div>
 
                 <!-- Hoodie -->
-                <div class="card-hover bg-stone-800 rounded-2xl overflow-hidden border border-stone-700">
-                    <div class="aspect-square bg-stone-700 flex items-center justify-center">
+                <div class="card-hover bg-beige rounded-2xl overflow-hidden border border-beige-dark">
+                    <div class="aspect-square bg-beige flex items-center justify-center">
                         <div class="text-6xl">🧥</div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-amber-100 mb-1">Wisdom Hoodie</h3>
-                        <p class="text-stone-500 text-sm mb-2">Heavyweight fleece</p>
-                        <p class="text-green-500 font-bold">Coming Soon</p>
+                        <h3 class="font-bold text-brown mb-1">Wisdom Hoodie</h3>
+                        <p class="text-brown-light text-sm mb-2">Heavyweight fleece</p>
+                        <p class="text-forest font-bold">Coming Soon</p>
                     </div>
                 </div>
 
                 <!-- Hat -->
-                <div class="card-hover bg-stone-800 rounded-2xl overflow-hidden border border-stone-700">
-                    <div class="aspect-square bg-stone-700 flex items-center justify-center">
+                <div class="card-hover bg-beige rounded-2xl overflow-hidden border border-beige-dark">
+                    <div class="aspect-square bg-beige flex items-center justify-center">
                         <div class="text-6xl">🧢</div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-amber-100 mb-1">Rooted Cap</h3>
-                        <p class="text-stone-500 text-sm mb-2">Embroidered logo</p>
-                        <p class="text-green-500 font-bold">Coming Soon</p>
+                        <h3 class="font-bold text-brown mb-1">Rooted Cap</h3>
+                        <p class="text-brown-light text-sm mb-2">Embroidered logo</p>
+                        <p class="text-forest font-bold">Coming Soon</p>
                     </div>
                 </div>
 
                 <!-- Mug -->
-                <div class="card-hover bg-stone-800 rounded-2xl overflow-hidden border border-stone-700">
-                    <div class="aspect-square bg-stone-700 flex items-center justify-center">
+                <div class="card-hover bg-beige rounded-2xl overflow-hidden border border-beige-dark">
+                    <div class="aspect-square bg-beige flex items-center justify-center">
                         <div class="text-6xl">☕</div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-amber-100 mb-1">Wisdom Mug</h3>
-                        <p class="text-stone-500 text-sm mb-2">15 oz ceramic</p>
-                        <p class="text-green-500 font-bold">Coming Soon</p>
+                        <h3 class="font-bold text-brown mb-1">Wisdom Mug</h3>
+                        <p class="text-brown-light text-sm mb-2">15 oz ceramic</p>
+                        <p class="text-forest font-bold">Coming Soon</p>
                     </div>
                 </div>
             </div>
@@ -193,19 +229,19 @@
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="py-16 bg-stone-800/50">
+    <section class="py-16 bg-beige">
         <div class="max-w-2xl mx-auto px-6 text-center">
-            <h2 class="font-cinzel text-2xl font-bold mb-4 text-amber-100">Be the First to Know</h2>
-            <p class="text-stone-400 mb-8">
+            <h2 class="font-cinzel text-2xl font-bold mb-4 text-brown">Be the First to Know</h2>
+            <p class="text-brown-light mb-8">
                 Sign up to get notified when ROOTED Apparel launches. Early subscribers get exclusive discounts!
             </p>
             <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input 
                     type="email" 
                     placeholder="Enter your email" 
-                    class="flex-1 px-4 py-3 rounded-xl bg-stone-900 border border-stone-700 text-white placeholder-stone-500 focus:outline-none focus:border-green-600"
+                    class="flex-1 px-4 py-3 rounded-xl bg-cream border border-beige-dark text-brown placeholder-stone-500 focus:outline-none focus:border-green-600"
                 >
-                <button type="submit" class="bg-gradient-to-r from-green-700 to-green-600 text-white px-6 py-3 rounded-xl font-bold whitespace-nowrap hover:from-green-600 hover:to-green-500 transition">
+                <button type="submit" class="bg-gradient-to-r from-forest to-forest-light text-brown px-6 py-3 rounded-xl font-bold whitespace-nowrap hover:from-forest-light hover:to-forest transition">
                     Notify Me
                 </button>
             </form>
@@ -215,11 +251,11 @@
     <!-- Scripture Quote -->
     <section class="py-16">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <p class="text-stone-500 text-lg italic">
+            <p class="text-brown-light text-lg italic">
                 "Blessed is the one who does not walk in step with the wicked... but whose delight is in the law of the LORD... 
-                That person is like <span class="text-green-500">a tree planted by streams of water</span>, which yields its fruit in season."
+                That person is like <span class="text-forest">a tree planted by streams of water</span>, which yields its fruit in season."
             </p>
-            <p class="text-green-500 text-sm mt-4 font-semibold">— Psalm 1:1-3</p>
+            <p class="text-forest text-sm mt-4 font-semibold">— Psalm 1:1-3</p>
         </div>
     </section>
 
@@ -229,13 +265,13 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-3">
                     <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-8 h-8 rounded-lg">
-                    <span class="font-cinzel text-lg font-bold text-amber-100">WISDOM</span>
+                    <span class="font-cinzel text-lg font-bold text-brown">WISDOM</span>
                 </div>
                 <div class="flex flex-wrap justify-center gap-6 text-sm">
-                    <a href="index.html" class="text-stone-500 hover:text-amber-200 transition">Home</a>
-                    <a href="workbooks.html" class="text-stone-500 hover:text-amber-200 transition">Workbooks</a>
-                    <a href="apparel.html" class="text-stone-500 hover:text-amber-200 transition">Apparel</a>
-                    <a href="week1.html" class="text-stone-500 hover:text-amber-200 transition">Week 1</a>
+                    <a href="index.html" class="text-brown-light hover:text-forest transition">Home</a>
+                    <a href="workbooks.html" class="text-brown-light hover:text-forest transition">Workbooks</a>
+                    <a href="apparel.html" class="text-brown-light hover:text-forest transition">Apparel</a>
+                    <a href="week1.html" class="text-brown-light hover:text-forest transition">Week 1</a>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-stone-800 text-center">
@@ -244,5 +280,6 @@
         </div>
     </footer>
 
+    <script src="scripts.js" defer></script>
 </body>
 </html>

@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://yourdomain.com/week4.html">
     <meta property="og:title" content="Week 4: Christian Life | Holy Spirit, Church, Ordinances">
     <meta property="og:description" content="Study the Holy Spirit, The Church, Baptism, Communion, and Christian Service. Free downloadable workbook.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta property="og:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta property="og:site_name" content="WISDOM Bible Study">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Week 4: Christian Life | WISDOM Bible Study">
     <meta name="twitter:description" content="Study the Holy Spirit, The Church, Baptism, Communion, and Christian Service.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -74,12 +74,47 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
     
     <!-- Preconnect & Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: {
+                        DEFAULT: '#F3E7D3',
+                        light: '#F8F2E6',
+                    },
+                    beige: {
+                        DEFAULT: '#E9DCC4',
+                        dark: '#DED0B8',
+                    },
+                    forest: {
+                        DEFAULT: '#2D5A3D',
+                        light: '#3A7D4A',
+                        dark: '#1E4A2D',
+                    },
+                    brown: {
+                        DEFAULT: '#4A3A28',
+                        dark: '#4A3A28',
+                        medium: '#7B5E3C',
+                        light: '#C6A77D',
+                        accent: '#7B5E3C',
+                        warm: '#7B5E3C',
+                    }
+                },
+                fontFamily: {
+                    cinzel: ['Cinzel', 'serif'],
+                    inter: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { font-family: 'Inter', sans-serif; }
@@ -90,27 +125,28 @@
         }
     .font-cinzel { font-family: 'Cinzel', serif; }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-brown">
     
         <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-stone-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="text-white font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
+                <span class="text-brown font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Home</a>
-                <a href="week1.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 1</a>
-                <a href="week2.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 2</a>
-                <a href="week3.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 3</a>
-                <a href="week4.html" class="text-green-500 font-semibold text-sm">Week 4</a>
-                <a href="week5.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 5</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Workbooks</a>
-                <a href="apparel.html" class="text-stone-400 hover:text-amber-100 transition text-sm">ROOTED Apparel</a>
+                <a href="index.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Home</a>
+                <a href="week1.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 1</a>
+                <a href="week2.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 2</a>
+                <a href="week3.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 3</a>
+                <a href="week4.html" class="text-forest font-semibold text-sm">Week 4</a>
+                <a href="week5.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 5</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Workbooks</a>
+                <a href="apparel.html" class="text-brown-light hover:text-brown transition text-sm">ROOTED Apparel</a>
             </div>
-            <a href="week5.html" class="bg-green-600 hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
+            <a href="week5.html" class="bg-forest-light hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
                 Next: Week 5 →
             </a>
         </div>
@@ -119,32 +155,32 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-green-900/20 via-black to-black"></div>
-        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-forest-light/10 rounded-full blur-3xl"></div>
         
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1">
                     <div class="flex items-center gap-3 mb-4">
-                        <span class="bg-green-700/30 border border-green-600/50 px-4 py-1.5 rounded-full text-sm text-green-400 font-bold">
+                        <span class="bg-forest/30 border border-green-600/50 px-4 py-1.5 rounded-full text-sm text-green-400 font-bold">
                             WEEK 4
                         </span>
-                        <span class="text-stone-500 text-sm">Doctrines L-P</span>
+                        <span class="text-brown-light text-sm">Doctrines L-P</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-bold mb-4">
                         Christian <span class="gradient-text">Life</span>
                     </h1>
-                    <p class="text-xl text-stone-400 mb-6">
+                    <p class="text-xl text-brown-light mb-6">
                         Spirit • Church • Ordinances • Walk • Service
                     </p>
-                    <p class="text-stone-500 mb-8 max-w-xl leading-relaxed">
+                    <p class="text-brown-light mb-8 max-w-xl leading-relaxed">
                         Explore the Holy Spirit's ministry, the nature of the church, 
                         how we're to walk in holiness, and how we serve using our spiritual gifts.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-8 py-4 rounded-xl font-bold text-lg transition">
+                        <button class="bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-8 py-4 rounded-xl font-bold text-lg transition">
                             Begin Week 4
                         </button>
-                        <button class="border border-stone-700 hover:border-stone-600 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                        <button class="border border-beige-dark hover:border-beige px-8 py-4 rounded-xl font-semibold text-lg transition">
                             Download Workbook
                         </button>
                     </div>
@@ -154,39 +190,39 @@
                     <div class="bg-gradient-to-br from-stone-900 to-stone-950 rounded-3xl p-8 border border-stone-800 max-w-md">
                         <h3 class="text-xl font-bold mb-6">This Week's Journey</h3>
                         <div class="space-y-4">
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">L</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">L</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Holy Spirit</h4>
-                                    <p class="text-sm text-stone-500">The Indwelling One</p>
+                                    <h4 class="font-semibold text-brown">The Holy Spirit</h4>
+                                    <p class="text-sm text-brown-light">The Indwelling One</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">M</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">M</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Church</h4>
-                                    <p class="text-sm text-stone-500">Body & Bride of Christ</p>
+                                    <h4 class="font-semibold text-brown">The Church</h4>
+                                    <p class="text-sm text-brown-light">Body & Bride of Christ</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">N</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">N</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Ordinances</h4>
-                                    <p class="text-sm text-stone-500">Baptism & Communion</p>
+                                    <h4 class="font-semibold text-brown">The Ordinances</h4>
+                                    <p class="text-sm text-brown-light">Baptism & Communion</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-teal-700 to-teal-800 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">O</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-teal-700 to-teal-800 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">O</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Christian Walk</h4>
-                                    <p class="text-sm text-stone-500">Spirit vs. Flesh</p>
+                                    <h4 class="font-semibold text-brown">The Christian Walk</h4>
+                                    <p class="text-sm text-brown-light">Spirit vs. Flesh</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">P</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">P</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Christian Service</h4>
-                                    <p class="text-sm text-stone-500">Gifts & Rewards</p>
+                                    <h4 class="font-semibold text-brown">Christian Service</h4>
+                                    <p class="text-sm text-brown-light">Gifts & Rewards</p>
                                 </div>
                             </div>
                         </div>
@@ -200,12 +236,12 @@
     <section class="py-16 bg-gradient-to-b from-black to-stone-950">
         <div class="max-w-4xl mx-auto px-6">
             <div class="bg-gradient-to-br from-green-900/40 to-green-950/60 rounded-3xl p-10 border border-green-800/30 text-center">
-                <span class="text-green-500 text-sm font-bold uppercase tracking-wider">Memory Verse</span>
-                <p class="text-2xl md:text-3xl font-medium text-white mt-4 mb-4 leading-relaxed">
+                <span class="text-forest text-sm font-bold uppercase tracking-wider">Memory Verse</span>
+                <p class="text-2xl md:text-3xl font-medium text-brown mt-4 mb-4 leading-relaxed">
                     "Do you not know that your body is the temple of the Holy Spirit who is in you, 
                     whom you have from God, and you are not your own?"
                 </p>
-                <p class="text-green-500/80 font-semibold">— 1 Corinthians 6:19</p>
+                <p class="text-forest/80 font-semibold">— 1 Corinthians 6:19</p>
             </div>
         </div>
     </section>
@@ -214,81 +250,81 @@
     <section id="doctrine-l" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">L</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">L</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Holy Spirit</h2>
-                    <p class="text-stone-500">The Indwelling One—Source of Power</p>
+                    <h2 class="text-3xl font-bold text-brown">The Holy Spirit</h2>
+                    <p class="text-brown-light">The Indwelling One—Source of Power</p>
                 </div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <div class="bg-green-900/20 border-l-4 border-green-500 rounded-lg p-6 mb-6">
+                    <div class="bg-forest/10 border-l-4 border-green-500 rounded-lg p-6 mb-6">
                         <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                        <p class="text-stone-300 leading-relaxed">
+                        <p class="text-brown-light leading-relaxed">
                             The Holy Spirit, the Third Person of the Trinity, took up His abode in the world at Pentecost. 
                             He dwells in every believer, unites all to Christ in one body, and is the source of all power 
                             and acceptable worship and service. He never departs from the church nor from the feeblest saint.
                         </p>
                     </div>
                     
-                    <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                        <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">His Indwelling Presence</h4>
+                    <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                        <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">His Indwelling Presence</h4>
                         <div class="space-y-3">
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">John 14:16-17</p>
-                                <p class="text-sm text-stone-400">Another Helper (allos—another of the same kind) who abides forever</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">John 14:16-17</p>
+                                <p class="text-sm text-brown-light">Another Helper (allos—another of the same kind) who abides forever</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">1 Corinthians 6:19</p>
-                                <p class="text-sm text-stone-400">Your body is the temple of the Holy Spirit</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">1 Corinthians 6:19</p>
+                                <p class="text-sm text-brown-light">Your body is the temple of the Holy Spirit</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Ephesians 2:22</p>
-                                <p class="text-sm text-stone-400">Being built together for a dwelling place of God in the Spirit</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Ephesians 2:22</p>
+                                <p class="text-sm text-brown-light">Being built together for a dwelling place of God in the Spirit</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Romans 8:9</p>
-                                <p class="text-sm text-stone-400">If anyone does not have the Spirit of Christ, he is not His</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Romans 8:9</p>
+                                <p class="text-sm text-brown-light">If anyone does not have the Spirit of Christ, he is not His</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <div class="bg-stone-900 rounded-xl p-6 border border-stone-800 mb-6">
-                        <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">His Ministries</h4>
+                    <div class="bg-cream rounded-xl p-6 border border-stone-800 mb-6">
+                        <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">His Ministries</h4>
                         <div class="space-y-3">
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">John 16:7-11</p>
-                                <p class="text-sm text-stone-400">Convicts the world of sin, righteousness, and judgment</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">John 16:7-11</p>
+                                <p class="text-sm text-brown-light">Convicts the world of sin, righteousness, and judgment</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">1 Corinthians 12:13</p>
-                                <p class="text-sm text-stone-400">Baptizes all believers into one body</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">1 Corinthians 12:13</p>
+                                <p class="text-sm text-brown-light">Baptizes all believers into one body</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Ephesians 4:30</p>
-                                <p class="text-sm text-stone-400">Seals us unto the day of redemption</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Ephesians 4:30</p>
+                                <p class="text-sm text-brown-light">Seals us unto the day of redemption</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Ephesians 5:18</p>
-                                <p class="text-sm text-stone-400">Be filled with the Spirit—continued filling for power</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Ephesians 5:18</p>
+                                <p class="text-sm text-brown-light">Be filled with the Spirit—continued filling for power</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">2 Thessalonians 2:7</p>
-                                <p class="text-sm text-stone-400">Restrains evil in the world</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">2 Thessalonians 2:7</p>
+                                <p class="text-sm text-brown-light">Restrains evil in the world</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">1 John 2:20-27</p>
-                                <p class="text-sm text-stone-400">Anoints and teaches believers</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">1 John 2:20-27</p>
+                                <p class="text-sm text-brown-light">Anoints and teaches believers</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bg-green-900/20 border border-green-800/30 rounded-xl p-6">
+                    <div class="bg-forest/10 border border-green-800/30 rounded-xl p-6">
                         <h4 class="text-green-400 font-bold mb-3">Indwelling vs. Filling</h4>
-                        <p class="text-stone-300 text-sm leading-relaxed">
+                        <p class="text-brown-light text-sm leading-relaxed">
                             Every believer has the <strong>indwelling</strong> of the Spirit from salvation (1 Cor. 6:19). 
                             The <strong>filling</strong> is for power, teaching, and service—and can be lost through 
                             disobedience. We are commanded to be filled (Eph. 5:18) and not to quench (1 Thess. 5:19) 
@@ -304,16 +340,16 @@
     <section id="doctrine-m" class="py-20 bg-black">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-800 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">M</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-800 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">M</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Church</h2>
-                    <p class="text-stone-500">A Unity of Believers—Body & Bride of Christ</p>
+                    <h2 class="text-3xl font-bold text-brown">The Church</h2>
+                    <p class="text-brown-light">A Unity of Believers—Body & Bride of Christ</p>
                 </div>
             </div>
             
-            <div class="bg-green-900/20 border-l-4 border-green-500 rounded-lg p-6 mb-8">
+            <div class="bg-forest/10 border-l-4 border-green-500 rounded-lg p-6 mb-8">
                 <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     All who are united to the risen and ascended Son of God are members of the church, which is the 
                     body and bride of Christ. It began at Pentecost and is completely distinct from Israel. By the 
                     same Spirit, all believers—whether Jews or Gentiles—are baptized into one body.
@@ -321,71 +357,71 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold mb-4">Distinct from Israel</h4>
-                    <ul class="space-y-2 text-stone-300 text-sm">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold mb-4">Distinct from Israel</h4>
+                    <ul class="space-y-2 text-brown-light text-sm">
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500 mt-1">•</span>
+                            <span class="text-forest mt-1">•</span>
                             <span>Israel: Old Covenant; Church: New Covenant</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500 mt-1">•</span>
+                            <span class="text-forest mt-1">•</span>
                             <span>Israel: No indwelling Spirit; Church: Spirit indwells</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500 mt-1">•</span>
+                            <span class="text-forest mt-1">•</span>
                             <span>Church is the "body of Christ"</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold mb-4">Foundation</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold mb-4">Foundation</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Matthew 16:16-18</p>
-                            <p class="text-xs text-stone-400">Upon this rock I will build My church</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Matthew 16:16-18</p>
+                            <p class="text-xs text-brown-light">Upon this rock I will build My church</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Acts 2:42-47</p>
-                            <p class="text-xs text-stone-400">3,000 saved and added to the body</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Acts 2:42-47</p>
+                            <p class="text-xs text-brown-light">3,000 saved and added to the body</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold mb-4">Unity</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold mb-4">Unity</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Ephesians 4:3-6</p>
-                            <p class="text-xs text-stone-400">Keep the unity of the Spirit</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Ephesians 4:3-6</p>
+                            <p class="text-xs text-brown-light">Keep the unity of the Spirit</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Colossians 3:14-15</p>
-                            <p class="text-xs text-stone-400">Bond of perfection; peace of God rule</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Colossians 3:14-15</p>
+                            <p class="text-xs text-brown-light">Bond of perfection; peace of God rule</p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Additional References</h4>
+            <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Additional References</h4>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Romans 12:5</p>
-                        <p class="text-xs text-stone-400">We, being many, are one body in Christ</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Romans 12:5</p>
+                        <p class="text-xs text-brown-light">We, being many, are one body in Christ</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">1 Corinthians 12:12-27</p>
-                        <p class="text-xs text-stone-400">Many members but one body</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">1 Corinthians 12:12-27</p>
+                        <p class="text-xs text-brown-light">Many members but one body</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Ephesians 1:22-23</p>
-                        <p class="text-xs text-stone-400">Head over all things to the church, His body</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Ephesians 1:22-23</p>
+                        <p class="text-xs text-brown-light">Head over all things to the church, His body</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Ephesians 4:3-10</p>
-                        <p class="text-xs text-stone-400">One body, one Spirit, one Lord, one faith</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Ephesians 4:3-10</p>
+                        <p class="text-xs text-brown-light">One body, one Spirit, one Lord, one faith</p>
                     </div>
                 </div>
             </div>
@@ -396,16 +432,16 @@
     <section id="doctrine-n" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">N</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">N</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Ordinances</h2>
-                    <p class="text-stone-500">Baptism & The Lord's Supper</p>
+                    <h2 class="text-3xl font-bold text-brown">The Ordinances</h2>
+                    <p class="text-brown-light">Baptism & The Lord's Supper</p>
                 </div>
             </div>
             
             <div class="bg-teal-900/20 border-l-4 border-teal-500 rounded-lg p-6 mb-8">
                 <h3 class="text-teal-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     Water baptism and the Lord's Supper are the only sacraments and ordinances of the church. 
                     They are a scriptural means of testimony for the church in this age—not a means of salvation, 
                     but an outward expression of an inward reality.
@@ -416,25 +452,25 @@
                 <div class="bg-gradient-to-br from-teal-900/30 to-teal-950/30 rounded-2xl p-8 border border-teal-800/30">
                     <div class="text-5xl mb-4 text-center">💧</div>
                     <h4 class="text-teal-400 font-bold text-xl text-center mb-4">Water Baptism</h4>
-                    <p class="text-stone-300 text-sm text-center mb-6">
+                    <p class="text-brown-light text-sm text-center mb-6">
                         Public declaration of faith—identification with Christ's death, burial, and resurrection
                     </p>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Matthew 28:19</p>
-                            <p class="text-xs text-stone-400">Go... baptizing them in the name of the Father, Son, and Holy Spirit</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Matthew 28:19</p>
+                            <p class="text-xs text-brown-light">Go... baptizing them in the name of the Father, Son, and Holy Spirit</p>
                         </div>
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Acts 10:47-48</p>
-                            <p class="text-xs text-stone-400">Can anyone forbid water for these who have received the Spirit?</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Acts 10:47-48</p>
+                            <p class="text-xs text-brown-light">Can anyone forbid water for these who have received the Spirit?</p>
                         </div>
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Acts 16:32-33</p>
-                            <p class="text-xs text-stone-400">Philippian jailer baptized immediately</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Acts 16:32-33</p>
+                            <p class="text-xs text-brown-light">Philippian jailer baptized immediately</p>
                         </div>
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Acts 18:7-8</p>
-                            <p class="text-xs text-stone-400">Crispus and many Corinthians believed and were baptized</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Acts 18:7-8</p>
+                            <p class="text-xs text-brown-light">Crispus and many Corinthians believed and were baptized</p>
                         </div>
                     </div>
                 </div>
@@ -442,17 +478,17 @@
                 <div class="bg-gradient-to-br from-teal-900/30 to-teal-950/30 rounded-2xl p-8 border border-teal-800/30">
                     <div class="text-5xl mb-4 text-center">🍞</div>
                     <h4 class="text-teal-400 font-bold text-xl text-center mb-4">The Lord's Supper</h4>
-                    <p class="text-stone-300 text-sm text-center mb-6">
+                    <p class="text-brown-light text-sm text-center mb-6">
                         Remembrance of Christ's sacrifice—proclaiming His death until He comes
                     </p>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">Luke 22:19-20</p>
-                            <p class="text-xs text-stone-400">"Do this in remembrance of Me"—the new covenant in My blood</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">Luke 22:19-20</p>
+                            <p class="text-xs text-brown-light">"Do this in remembrance of Me"—the new covenant in My blood</p>
                         </div>
-                        <div class="p-3 bg-stone-900/50 rounded-lg">
-                            <p class="text-white font-semibold text-sm">1 Corinthians 11:26</p>
-                            <p class="text-xs text-stone-400">As often as you eat and drink, you proclaim the Lord's death till He comes</p>
+                        <div class="p-3 bg-cream/50 rounded-lg">
+                            <p class="text-brown font-semibold text-sm">1 Corinthians 11:26</p>
+                            <p class="text-xs text-brown-light">As often as you eat and drink, you proclaim the Lord's death till He comes</p>
                         </div>
                     </div>
                 </div>
@@ -464,16 +500,16 @@
     <section id="doctrine-o" class="py-20 bg-black">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-teal-700 to-teal-800 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">O</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-700 to-teal-800 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">O</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Christian Walk</h2>
-                    <p class="text-stone-500">Spirit vs. Flesh</p>
+                    <h2 class="text-3xl font-bold text-brown">The Christian Walk</h2>
+                    <p class="text-brown-light">Spirit vs. Flesh</p>
                 </div>
             </div>
             
             <div class="bg-teal-900/20 border-l-4 border-teal-500 rounded-lg p-6 mb-8">
                 <h3 class="text-teal-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     We are called with a holy calling to walk not after the flesh but after the Spirit. The flesh 
                     with its fallen, Adamic nature is never eradicated in this life and needs to be kept by the 
                     Spirit constantly in subjection to Christ, or it will surely manifest in our lives.
@@ -481,42 +517,42 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-teal-500 font-bold text-sm uppercase tracking-wider mb-4">Walking in the Spirit</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Romans 6:11-13</p>
-                            <p class="text-sm text-stone-400">Reckon yourselves dead to sin, alive to God; present your members to God</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Romans 6:11-13</p>
+                            <p class="text-sm text-brown-light">Reckon yourselves dead to sin, alive to God; present your members to God</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Romans 8:2, 4, 12-13</p>
-                            <p class="text-sm text-stone-400">Law of the Spirit of life; walk according to the Spirit; put to death the deeds of the body</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Romans 8:2, 4, 12-13</p>
+                            <p class="text-sm text-brown-light">Law of the Spirit of life; walk according to the Spirit; put to death the deeds of the body</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Galatians 5:16-23</p>
-                            <p class="text-sm text-stone-400">Walk in the Spirit and you shall not fulfill the lust of the flesh; fruit of the Spirit</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Galatians 5:16-23</p>
+                            <p class="text-sm text-brown-light">Walk in the Spirit and you shall not fulfill the lust of the flesh; fruit of the Spirit</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-teal-500 font-bold text-sm uppercase tracking-wider mb-4">Practical Holiness</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Ephesians 4:22-5:2</p>
-                            <p class="text-sm text-stone-400">Put off the old man, put on the new man; walk in love</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Ephesians 4:22-5:2</p>
+                            <p class="text-sm text-brown-light">Put off the old man, put on the new man; walk in love</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Colossians 2:6-10</p>
-                            <p class="text-sm text-stone-400">As you received Christ, walk in Him, rooted and built up</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Colossians 2:6-10</p>
+                            <p class="text-sm text-brown-light">As you received Christ, walk in Him, rooted and built up</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Peter 1:14-16</p>
-                            <p class="text-sm text-stone-400">As obedient children... be holy, for I am holy</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Peter 1:14-16</p>
+                            <p class="text-sm text-brown-light">As obedient children... be holy, for I am holy</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 John 1:4-7, 3:5-9</p>
-                            <p class="text-sm text-stone-400">Walk in the light; whoever abides in Him does not practice sin</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 John 1:4-7, 3:5-9</p>
+                            <p class="text-sm text-brown-light">Walk in the light; whoever abides in Him does not practice sin</p>
                         </div>
                     </div>
                 </div>
@@ -528,16 +564,16 @@
     <section id="doctrine-p" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">P</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">P</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Christian's Service</h2>
-                    <p class="text-stone-500">Spiritual Gifts & Rewards</p>
+                    <h2 class="text-3xl font-bold text-brown">The Christian's Service</h2>
+                    <p class="text-brown-light">Spiritual Gifts & Rewards</p>
                 </div>
             </div>
             
-            <div class="bg-green-900/20 border-l-4 border-green-500 rounded-lg p-6 mb-8">
+            <div class="bg-forest/10 border-l-4 border-green-500 rounded-lg p-6 mb-8">
                 <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     Divine, enabling gifts for service are bestowed by the Spirit upon all who are saved. While there is 
                     diversity of gifts, each believer is energized by the same Spirit. Rewards are promised according to 
                     faithfulness and will be bestowed at the judgment seat of Christ.
@@ -545,48 +581,48 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Spiritual Gifts</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Spiritual Gifts</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Romans 12:6</p>
-                            <p class="text-sm text-stone-400">Gifts differing according to the grace given—use them!</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Romans 12:6</p>
+                            <p class="text-sm text-brown-light">Gifts differing according to the grace given—use them!</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Corinthians 12:4-11</p>
-                            <p class="text-sm text-stone-400">Diversity of gifts, same Spirit; different ministries, same Lord</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Corinthians 12:4-11</p>
+                            <p class="text-sm text-brown-light">Diversity of gifts, same Spirit; different ministries, same Lord</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Ephesians 4:11</p>
-                            <p class="text-sm text-stone-400">He gave apostles, prophets, evangelists, pastors, teachers—for equipping</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Ephesians 4:11</p>
+                            <p class="text-sm text-brown-light">He gave apostles, prophets, evangelists, pastors, teachers—for equipping</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Timothy 5:17-18; Luke 10:7</p>
-                            <p class="text-sm text-stone-400">The laborer is worthy of his wages—pastors should be supported</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Timothy 5:17-18; Luke 10:7</p>
+                            <p class="text-sm text-brown-light">The laborer is worthy of his wages—pastors should be supported</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Rewards at the Judgment Seat</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Rewards at the Judgment Seat</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Corinthians 3:9-15</p>
-                            <p class="text-sm text-stone-400">Each one's work will be tested by fire—gold, silver, precious stones vs. wood, hay, stubble</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Corinthians 3:9-15</p>
+                            <p class="text-sm text-brown-light">Each one's work will be tested by fire—gold, silver, precious stones vs. wood, hay, stubble</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Corinthians 9:18-27</p>
-                            <p class="text-sm text-stone-400">Run to win the prize; discipline your body; motivation matters</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Corinthians 9:18-27</p>
+                            <p class="text-sm text-brown-light">Run to win the prize; discipline your body; motivation matters</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">2 Corinthians 5:10</p>
-                            <p class="text-sm text-stone-400">We must all appear before the judgment seat of Christ to receive for things done</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">2 Corinthians 5:10</p>
+                            <p class="text-sm text-brown-light">We must all appear before the judgment seat of Christ to receive for things done</p>
                         </div>
                     </div>
                     
-                    <div class="mt-4 p-4 bg-green-900/20 rounded-lg border border-green-800/30">
+                    <div class="mt-4 p-4 bg-forest/10 rounded-lg border border-green-800/30">
                         <p class="text-green-400 font-bold text-sm mb-2">Note:</p>
-                        <p class="text-stone-300 text-sm">
+                        <p class="text-brown-light text-sm">
                             This is the judgment seat (bema) for believers' rewards—not the Great White Throne for 
                             unbelievers. Salvation is not in question; faithfulness and service are being evaluated.
                         </p>
@@ -599,27 +635,27 @@
     <!-- Discussion Questions -->
     <section class="py-20 bg-black">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">Discussion Questions</h2>
+            <h2 class="text-3xl font-bold text-brown text-center mb-12">Discussion Questions</h2>
             <div class="space-y-4">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 1</p>
-                    <p class="text-stone-300">What is the difference between the indwelling and the filling of the Holy Spirit? How can you be filled?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 1</p>
+                    <p class="text-brown-light">What is the difference between the indwelling and the filling of the Holy Spirit? How can you be filled?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 2</p>
-                    <p class="text-stone-300">How is the church distinct from Israel? Why does this matter for understanding Scripture?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 2</p>
+                    <p class="text-brown-light">How is the church distinct from Israel? Why does this matter for understanding Scripture?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 3</p>
-                    <p class="text-stone-300">Why are baptism and communion important even though they don't save us?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 3</p>
+                    <p class="text-brown-light">Why are baptism and communion important even though they don't save us?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 4</p>
-                    <p class="text-stone-300">What practical steps can you take to "walk in the Spirit" and not fulfill the lusts of the flesh?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 4</p>
+                    <p class="text-brown-light">What practical steps can you take to "walk in the Spirit" and not fulfill the lusts of the flesh?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 5</p>
-                    <p class="text-stone-300">What spiritual gift(s) do you believe God has given you? How are you using them to serve?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 5</p>
+                    <p class="text-brown-light">What spiritual gift(s) do you believe God has given you? How are you using them to serve?</p>
                 </div>
             </div>
         </div>
@@ -630,23 +666,23 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <a href="week3.html" class="flex items-center gap-4 group">
-                    <div class="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center group-hover:bg-stone-700 transition">
-                        <svg class="w-5 h-5 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-beige rounded-xl flex items-center justify-center group-hover:bg-beige transition">
+                        <svg class="w-5 h-5 text-brown-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                         </svg>
                     </div>
                     <div>
-                        <p class="text-stone-500 text-sm">Previous</p>
-                        <p class="text-white font-semibold">Week 3: Salvation</p>
+                        <p class="text-brown-light text-sm">Previous</p>
+                        <p class="text-brown font-semibold">Week 3: Salvation</p>
                     </div>
                 </a>
                 <a href="week5.html" class="flex items-center gap-4 group">
                     <div class="text-right">
-                        <p class="text-stone-500 text-sm">Next</p>
-                        <p class="text-white font-semibold">Week 5: Future Things</p>
+                        <p class="text-brown-light text-sm">Next</p>
+                        <p class="text-brown font-semibold">Week 5: Future Things</p>
                     </div>
-                    <div class="w-12 h-12 bg-green-700 rounded-xl flex items-center justify-center group-hover:bg-green-600 transition">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-forest rounded-xl flex items-center justify-center group-hover:bg-forest-light transition">
+                        <svg class="w-5 h-5 text-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
                     </div>
@@ -660,12 +696,13 @@
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="flex items-center justify-center gap-3 mb-4">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="text-white font-bold tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
+                <span class="text-brown font-bold tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
             </div>
-            <p class="text-stone-500 text-sm mb-4">Bible Study Curriculum by Adetoro Oriaifo</p>
+            <p class="text-brown-light text-sm mb-4">Bible Study Curriculum by Adetoro Oriaifo</p>
             <p class="text-stone-600 text-xs">Based on the ordination preparation of Pastor Brian Ellis Bailey</p>
         </div>
     </footer>
 
+    <script src="scripts.js" defer></script>
 </body>
 </html>

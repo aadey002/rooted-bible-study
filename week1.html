@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://yourdomain.com/week1.html">
     <meta property="og:title" content="Week 1: Foundations | Scripture, Trinity, Angels">
     <meta property="og:description" content="Build your faith on foundational truths: The Scriptures, The Trinity, and Angels & Demons. Free downloadable workbook.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta property="og:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta property="og:site_name" content="WISDOM Bible Study">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Week 1: Foundations | WISDOM Bible Study">
     <meta name="twitter:description" content="Build your faith on foundational truths: The Scriptures, The Trinity, and Angels & Demons.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     
     <!-- Structured Data - Course Lesson -->
     <script type="application/ld+json">
@@ -85,7 +85,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,7 +143,7 @@
         }
         
         /* Glow effect */
-        .hero-glow {
+        .hero-shadow-2xl shadow-brown-warm/20 {
             position: absolute;
             top: 25%;
             left: 50%;
@@ -626,12 +626,13 @@
         }
     .font-cinzel { font-family: 'Cinzel', serif; }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Landing Hero -->
     <section class="landing-hero">
         <!-- Glow Effect -->
-        <div class="hero-glow"></div>
+        <div class="hero-shadow-2xl shadow-brown-warm/20"></div>
         
         <!-- Light Beams -->
         <div class="light-beams">
@@ -651,19 +652,19 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="text-white font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
+                <span class="text-brown font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Home</a>
-                <a href="week1.html" class="text-green-500 font-semibold text-sm">Week 1</a>
-                <a href="week2.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 2</a>
-                <a href="week3.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 3</a>
-                <a href="week4.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 4</a>
-                <a href="week5.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 5</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Workbooks</a>
-                <a href="apparel.html" class="text-stone-400 hover:text-amber-100 transition text-sm">ROOTED Apparel</a>
+                <a href="index.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Home</a>
+                <a href="week1.html" class="text-forest font-semibold text-sm">Week 1</a>
+                <a href="week2.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 2</a>
+                <a href="week3.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 3</a>
+                <a href="week4.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 4</a>
+                <a href="week5.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 5</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Workbooks</a>
+                <a href="apparel.html" class="text-brown-light hover:text-brown transition text-sm">ROOTED Apparel</a>
             </div>
-            <a href="week2.html" class="bg-green-600 hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
+            <a href="week2.html" class="bg-forest-light hover:bg-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition">
                 Next: Week 2 →
             </a>
         </div>
@@ -835,5 +836,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts.js" defer></script>
 </body>
 </html>

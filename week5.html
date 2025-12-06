@@ -20,14 +20,14 @@
     <meta property="og:url" content="https://yourdomain.com/week5.html">
     <meta property="og:title" content="Week 5: Future Things | Rapture, Tribulation, Second Coming">
     <meta property="og:description" content="Study end times prophecy: The Rapture, Tribulation, Second Coming, and Eternity. Free downloadable workbook.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta property="og:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     <meta property="og:site_name" content="WISDOM Bible Study">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Week 5: Future Things | WISDOM Bible Study">
     <meta name="twitter:description" content="Study end times prophecy: The Rapture, Tribulation, Second Coming, and Eternity.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_cover.png">
+    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_website_cover.png">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -74,12 +74,47 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
     
     <!-- Preconnect & Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: {
+                        DEFAULT: '#F3E7D3',
+                        light: '#F8F2E6',
+                    },
+                    beige: {
+                        DEFAULT: '#E9DCC4',
+                        dark: '#DED0B8',
+                    },
+                    forest: {
+                        DEFAULT: '#2D5A3D',
+                        light: '#3A7D4A',
+                        dark: '#1E4A2D',
+                    },
+                    brown: {
+                        DEFAULT: '#4A3A28',
+                        dark: '#4A3A28',
+                        medium: '#7B5E3C',
+                        light: '#C6A77D',
+                        accent: '#7B5E3C',
+                        warm: '#7B5E3C',
+                    }
+                },
+                fontFamily: {
+                    cinzel: ['Cinzel', 'serif'],
+                    inter: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { font-family: 'Inter', sans-serif; }
@@ -90,27 +125,28 @@
         }
     .font-cinzel { font-family: 'Cinzel', serif; }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-brown">
     
         <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-stone-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="text-white font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
+                <span class="text-brown font-bold text-lg tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Home</a>
-                <a href="week1.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 1</a>
-                <a href="week2.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 2</a>
-                <a href="week3.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 3</a>
-                <a href="week4.html" class="text-stone-400 hover:text-white transition font-medium text-sm">Week 4</a>
-                <a href="week5.html" class="text-green-500 font-semibold text-sm">Week 5</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-white transition text-sm font-medium">Workbooks</a>
-                <a href="apparel.html" class="text-stone-400 hover:text-amber-100 transition text-sm">ROOTED Apparel</a>
+                <a href="index.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Home</a>
+                <a href="week1.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 1</a>
+                <a href="week2.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 2</a>
+                <a href="week3.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 3</a>
+                <a href="week4.html" class="text-brown-light hover:text-brown transition font-medium text-sm">Week 4</a>
+                <a href="week5.html" class="text-forest font-semibold text-sm">Week 5</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-brown transition text-sm font-medium">Workbooks</a>
+                <a href="apparel.html" class="text-brown-light hover:text-brown transition text-sm">ROOTED Apparel</a>
             </div>
-            <a href="index.html" class="bg-green-700 hover:bg-stone-8000 px-5 py-2 rounded-lg text-sm font-semibold transition">
+            <a href="index.html" class="bg-forest hover:bg-beige0 px-5 py-2 rounded-lg text-sm font-semibold transition">
                 Complete! 🎉
             </a>
         </div>
@@ -119,7 +155,7 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-amber-900/20 via-black to-black"></div>
-        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-700/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-forest/10 rounded-full blur-3xl"></div>
         
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -128,24 +164,24 @@
                         <span class="bg-amber-700/30 border border-green-700/50 px-4 py-1.5 rounded-full text-sm text-green-400 font-bold">
                             WEEK 5 • FINAL WEEK
                         </span>
-                        <span class="text-stone-500 text-sm">Doctrines Q-V</span>
+                        <span class="text-brown-light text-sm">Doctrines Q-V</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-bold mb-4">
                         Future <span class="gradient-text">Things</span>
                     </h1>
-                    <p class="text-xl text-stone-400 mb-6">
+                    <p class="text-xl text-brown-light mb-6">
                         Commission • Rapture • Tribulation • Second Coming • Eternity • Stewardship
                     </p>
-                    <p class="text-stone-500 mb-8 max-w-xl leading-relaxed">
+                    <p class="text-brown-light mb-8 max-w-xl leading-relaxed">
                         The grand finale! Explore God's prophetic plan—the Great Commission, the blessed hope 
                         of the rapture, the tribulation, Christ's glorious return, the eternal state, and our 
                         call to faithful stewardship.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-700 hover:to-green-500 px-8 py-4 rounded-xl font-bold text-lg transition">
+                        <button class="bg-gradient-to-r from-forest to-forest-light hover:from-green-700 hover:to-forest px-8 py-4 rounded-xl font-bold text-lg transition">
                             Begin Week 5 🎉
                         </button>
-                        <button class="border border-stone-700 hover:border-stone-600 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                        <button class="border border-beige-dark hover:border-beige px-8 py-4 rounded-xl font-semibold text-lg transition">
                             Download Workbook
                         </button>
                     </div>
@@ -155,46 +191,46 @@
                     <div class="bg-gradient-to-br from-stone-900 to-stone-950 rounded-3xl p-8 border border-stone-800 max-w-md">
                         <h3 class="text-xl font-bold mb-6">This Week's Journey</h3>
                         <div class="space-y-4">
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">Q</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">Q</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Great Commission</h4>
-                                    <p class="text-sm text-stone-500">Go into all the world</p>
+                                    <h4 class="font-semibold text-brown">The Great Commission</h4>
+                                    <p class="text-sm text-brown-light">Go into all the world</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-amber-800 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">R</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-amber-800 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">R</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Rapture</h4>
-                                    <p class="text-sm text-stone-500">Caught up to meet Him</p>
+                                    <h4 class="font-semibold text-brown">The Rapture</h4>
+                                    <p class="text-sm text-brown-light">Caught up to meet Him</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">S</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">S</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Tribulation</h4>
-                                    <p class="text-sm text-stone-500">Time of Jacob's trouble</p>
+                                    <h4 class="font-semibold text-brown">The Tribulation</h4>
+                                    <p class="text-sm text-brown-light">Time of Jacob's trouble</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-orange-700 to-orange-800 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">T</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-orange-700 to-orange-800 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">T</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Second Coming</h4>
-                                    <p class="text-sm text-stone-500">King of Kings returns</p>
+                                    <h4 class="font-semibold text-brown">The Second Coming</h4>
+                                    <p class="text-sm text-brown-light">King of Kings returns</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">U</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">U</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">The Eternal State</h4>
-                                    <p class="text-sm text-stone-500">New heavens & new earth</p>
+                                    <h4 class="font-semibold text-brown">The Eternal State</h4>
+                                    <p class="text-sm text-brown-light">New heavens & new earth</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4 p-4 bg-stone-800/50 rounded-xl">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-white font-bold flex-shrink-0">V</div>
+                            <div class="flex items-start gap-4 p-4 bg-beige rounded-xl">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-800 rounded-xl flex items-center justify-center text-brown font-bold flex-shrink-0">V</div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Stewardship</h4>
-                                    <p class="text-sm text-stone-500">Faithful with all</p>
+                                    <h4 class="font-semibold text-brown">Stewardship</h4>
+                                    <p class="text-sm text-brown-light">Faithful with all</p>
                                 </div>
                             </div>
                         </div>
@@ -207,13 +243,13 @@
     <!-- Memory Verse -->
     <section class="py-16 bg-gradient-to-b from-black to-stone-950">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gradient-to-br from-amber-900/40 to-stone-900/60 rounded-3xl p-10 border border-stone-700/30 text-center">
-                <span class="text-green-500 text-sm font-bold uppercase tracking-wider">Memory Verse</span>
-                <p class="text-2xl md:text-3xl font-medium text-white mt-4 mb-4 leading-relaxed">
+            <div class="bg-gradient-to-br from-amber-900/40 to-stone-900/60 rounded-3xl p-10 border border-beige-dark/30 text-center">
+                <span class="text-forest text-sm font-bold uppercase tracking-wider">Memory Verse</span>
+                <p class="text-2xl md:text-3xl font-medium text-brown mt-4 mb-4 leading-relaxed">
                     "For the Lord Himself will descend from heaven with a shout, with the voice 
                     of an archangel, and with the trumpet of God. And the dead in Christ will rise first."
                 </p>
-                <p class="text-green-500/80 font-semibold">— 1 Thessalonians 4:16</p>
+                <p class="text-forest/80 font-semibold">— 1 Thessalonians 4:16</p>
             </div>
         </div>
     </section>
@@ -222,57 +258,57 @@
     <section id="doctrine-q" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">Q</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">Q</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Great Commission</h2>
-                    <p class="text-stone-500">Go Into All the World</p>
+                    <h2 class="text-3xl font-bold text-brown">The Great Commission</h2>
+                    <p class="text-brown-light">Go Into All the World</p>
                 </div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <div class="bg-stone-800/20 border-l-4 border-amber-500 rounded-lg p-6 mb-6">
+                    <div class="bg-beige/20 border-l-4 border-amber-500 rounded-lg p-6 mb-6">
                         <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                        <p class="text-stone-300 leading-relaxed">
+                        <p class="text-brown-light leading-relaxed">
                             Every believer is commanded to share the gospel with the lost. The responsibility 
                             is universal—we are ambassadors for Christ, carrying the ministry of reconciliation 
                             to the ends of the earth.
                         </p>
                     </div>
                     
-                    <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                        <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">The Commission</h4>
+                    <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                        <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">The Commission</h4>
                         <div class="space-y-3">
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Matthew 28:18-20</p>
-                                <p class="text-sm text-stone-400">All authority... Go therefore and make disciples of all nations, baptizing... teaching them to observe all things</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Matthew 28:18-20</p>
+                                <p class="text-sm text-brown-light">All authority... Go therefore and make disciples of all nations, baptizing... teaching them to observe all things</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Mark 16:15</p>
-                                <p class="text-sm text-stone-400">Go into all the world and preach the gospel to every creature</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Mark 16:15</p>
+                                <p class="text-sm text-brown-light">Go into all the world and preach the gospel to every creature</p>
                             </div>
-                            <div class="p-3 bg-stone-800/50 rounded-lg">
-                                <p class="text-white font-semibold">Acts 1:8</p>
-                                <p class="text-sm text-stone-400">You shall be witnesses to Me in Jerusalem, Judea, Samaria, and to the end of the earth</p>
+                            <div class="p-3 bg-beige rounded-lg">
+                                <p class="text-brown font-semibold">Acts 1:8</p>
+                                <p class="text-sm text-brown-light">You shall be witnesses to Me in Jerusalem, Judea, Samaria, and to the end of the earth</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Our Role as Ambassadors</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Our Role as Ambassadors</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">2 Corinthians 5:18-20</p>
-                            <p class="text-sm text-stone-400">God... has given us the ministry of reconciliation... we are ambassadors for Christ, as though God were pleading through us</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">2 Corinthians 5:18-20</p>
+                            <p class="text-sm text-brown-light">God... has given us the ministry of reconciliation... we are ambassadors for Christ, as though God were pleading through us</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Romans 10:14-15</p>
-                            <p class="text-sm text-stone-400">How shall they hear without a preacher?... How beautiful are the feet of those who preach the gospel</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Romans 10:14-15</p>
+                            <p class="text-sm text-brown-light">How shall they hear without a preacher?... How beautiful are the feet of those who preach the gospel</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Peter 3:15</p>
-                            <p class="text-sm text-stone-400">Always be ready to give a defense to everyone who asks you a reason for the hope that is in you</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Peter 3:15</p>
+                            <p class="text-sm text-brown-light">Always be ready to give a defense to everyone who asks you a reason for the hope that is in you</p>
                         </div>
                     </div>
                 </div>
@@ -284,16 +320,16 @@
     <section id="doctrine-r" class="py-20 bg-black">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-amber-800 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">R</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-amber-800 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">R</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Rapture</h2>
-                    <p class="text-stone-500">The Blessed Hope—Caught Up to Meet Him</p>
+                    <h2 class="text-3xl font-bold text-brown">The Rapture</h2>
+                    <p class="text-brown-light">The Blessed Hope—Caught Up to Meet Him</p>
                 </div>
             </div>
             
-            <div class="bg-stone-800/20 border-l-4 border-amber-500 rounded-lg p-6 mb-8">
+            <div class="bg-beige/20 border-l-4 border-amber-500 rounded-lg p-6 mb-8">
                 <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     The "blessed hope" of the believer is the imminent, personal, pretribulational coming of Christ 
                     for His redeemed ones. The Lord Himself will descend from heaven with a shout; the dead in Christ 
                     will rise first, then we who are alive will be caught up together with them to meet the Lord in the air.
@@ -301,38 +337,38 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">The Event</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">The Event</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Thessalonians 4:13-18</p>
-                            <p class="text-sm text-stone-400">The Lord Himself will descend... dead in Christ rise first... we who are alive shall be caught up together</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Thessalonians 4:13-18</p>
+                            <p class="text-sm text-brown-light">The Lord Himself will descend... dead in Christ rise first... we who are alive shall be caught up together</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Corinthians 15:51-52</p>
-                            <p class="text-sm text-stone-400">We shall not all sleep, but we shall all be changed—in a moment, in the twinkling of an eye</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Corinthians 15:51-52</p>
+                            <p class="text-sm text-brown-light">We shall not all sleep, but we shall all be changed—in a moment, in the twinkling of an eye</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">John 14:1-3</p>
-                            <p class="text-sm text-stone-400">I go to prepare a place for you... I will come again and receive you to Myself</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">John 14:1-3</p>
+                            <p class="text-sm text-brown-light">I go to prepare a place for you... I will come again and receive you to Myself</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">The Blessed Hope</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">The Blessed Hope</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Titus 2:13</p>
-                            <p class="text-sm text-stone-400">Looking for the blessed hope and glorious appearing of our great God and Savior Jesus Christ</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Titus 2:13</p>
+                            <p class="text-sm text-brown-light">Looking for the blessed hope and glorious appearing of our great God and Savior Jesus Christ</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Philippians 3:20-21</p>
-                            <p class="text-sm text-stone-400">We eagerly wait for the Savior... who will transform our lowly body</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Philippians 3:20-21</p>
+                            <p class="text-sm text-brown-light">We eagerly wait for the Savior... who will transform our lowly body</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 John 3:2-3</p>
-                            <p class="text-sm text-stone-400">When He is revealed, we shall be like Him... everyone who has this hope in Him purifies himself</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 John 3:2-3</p>
+                            <p class="text-sm text-brown-light">When He is revealed, we shall be like Him... everyone who has this hope in Him purifies himself</p>
                         </div>
                     </div>
                 </div>
@@ -344,16 +380,16 @@
     <section id="doctrine-s" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">S</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Tribulation</h2>
-                    <p class="text-stone-500">The Time of Jacob's Trouble</p>
+                    <h2 class="text-3xl font-bold text-brown">The Tribulation</h2>
+                    <p class="text-brown-light">The Time of Jacob's Trouble</p>
                 </div>
             </div>
             
             <div class="bg-orange-900/20 border-l-4 border-orange-500 rounded-lg p-6 mb-8">
                 <h3 class="text-orange-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     After the rapture of the church, a period of unprecedented tribulation will come upon the earth—
                     Daniel's 70th week, a 7-year period. The church is not appointed to wrath and will be kept from 
                     "the hour of trial" that is coming upon the whole world.
@@ -361,38 +397,38 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-orange-500 font-bold text-sm uppercase tracking-wider mb-4">The Period Described</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Daniel 9:27</p>
-                            <p class="text-sm text-stone-400">He shall confirm a covenant with many for one week (7 years); in the middle... abomination of desolation</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Daniel 9:27</p>
+                            <p class="text-sm text-brown-light">He shall confirm a covenant with many for one week (7 years); in the middle... abomination of desolation</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Jeremiah 30:7</p>
-                            <p class="text-sm text-stone-400">Alas! For that day is great, so that none is like it; it is the time of Jacob's trouble</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Jeremiah 30:7</p>
+                            <p class="text-sm text-brown-light">Alas! For that day is great, so that none is like it; it is the time of Jacob's trouble</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Matthew 24:21-22</p>
-                            <p class="text-sm text-stone-400">For then there will be great tribulation, such as has not been since the beginning of the world</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Matthew 24:21-22</p>
+                            <p class="text-sm text-brown-light">For then there will be great tribulation, such as has not been since the beginning of the world</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-orange-500 font-bold text-sm uppercase tracking-wider mb-4">Church Kept From Wrath</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Revelation 3:10</p>
-                            <p class="text-sm text-stone-400">I will keep you from the hour of trial which shall come upon the whole world</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Revelation 3:10</p>
+                            <p class="text-sm text-brown-light">I will keep you from the hour of trial which shall come upon the whole world</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Thessalonians 5:9</p>
-                            <p class="text-sm text-stone-400">God did not appoint us to wrath, but to obtain salvation through our Lord Jesus Christ</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Thessalonians 5:9</p>
+                            <p class="text-sm text-brown-light">God did not appoint us to wrath, but to obtain salvation through our Lord Jesus Christ</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Thessalonians 1:10</p>
-                            <p class="text-sm text-stone-400">Jesus who delivers us from the wrath to come</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Thessalonians 1:10</p>
+                            <p class="text-sm text-brown-light">Jesus who delivers us from the wrath to come</p>
                         </div>
                     </div>
                 </div>
@@ -404,16 +440,16 @@
     <section id="doctrine-t" class="py-20 bg-black">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-orange-700 to-orange-800 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">T</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-orange-700 to-orange-800 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">T</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Second Coming of Christ</h2>
-                    <p class="text-stone-500">King of Kings Returns to Reign</p>
+                    <h2 class="text-3xl font-bold text-brown">The Second Coming of Christ</h2>
+                    <p class="text-brown-light">King of Kings Returns to Reign</p>
                 </div>
             </div>
             
             <div class="bg-orange-900/20 border-l-4 border-orange-500 rounded-lg p-6 mb-8">
                 <h3 class="text-orange-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     After the tribulation, Christ will return visibly and bodily to earth with His saints. He will 
                     defeat His enemies at Armageddon, bind Satan for 1,000 years, and establish His millennial 
                     kingdom, reigning from David's throne in Jerusalem.
@@ -421,38 +457,38 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-orange-500 font-bold text-sm uppercase tracking-wider mb-4">His Return</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Zechariah 14:4</p>
-                            <p class="text-sm text-stone-400">In that day His feet will stand on the Mount of Olives</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Zechariah 14:4</p>
+                            <p class="text-sm text-brown-light">In that day His feet will stand on the Mount of Olives</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Matthew 24:29-30</p>
-                            <p class="text-sm text-stone-400">They will see the Son of Man coming on the clouds of heaven with power and great glory</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Matthew 24:29-30</p>
+                            <p class="text-sm text-brown-light">They will see the Son of Man coming on the clouds of heaven with power and great glory</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Revelation 19:11-16</p>
-                            <p class="text-sm text-stone-400">Faithful and True... King of Kings and Lord of Lords</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Revelation 19:11-16</p>
+                            <p class="text-sm text-brown-light">Faithful and True... King of Kings and Lord of Lords</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
                     <h4 class="text-orange-500 font-bold text-sm uppercase tracking-wider mb-4">The Millennium</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Revelation 20:1-6</p>
-                            <p class="text-sm text-stone-400">Satan bound 1,000 years; they lived and reigned with Christ for a thousand years</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Revelation 20:1-6</p>
+                            <p class="text-sm text-brown-light">Satan bound 1,000 years; they lived and reigned with Christ for a thousand years</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Isaiah 11:6-9</p>
-                            <p class="text-sm text-stone-400">The wolf shall dwell with the lamb... the earth shall be full of the knowledge of the LORD</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Isaiah 11:6-9</p>
+                            <p class="text-sm text-brown-light">The wolf shall dwell with the lamb... the earth shall be full of the knowledge of the LORD</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Luke 1:32-33</p>
-                            <p class="text-sm text-stone-400">He will reign over the house of Jacob forever, and of His kingdom there will be no end</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Luke 1:32-33</p>
+                            <p class="text-sm text-brown-light">He will reign over the house of Jacob forever, and of His kingdom there will be no end</p>
                         </div>
                     </div>
                 </div>
@@ -464,16 +500,16 @@
     <section id="doctrine-u" class="py-20 bg-stone-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">U</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">U</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">The Eternal State</h2>
-                    <p class="text-stone-500">New Heavens & New Earth</p>
+                    <h2 class="text-3xl font-bold text-brown">The Eternal State</h2>
+                    <p class="text-brown-light">New Heavens & New Earth</p>
                 </div>
             </div>
             
-            <div class="bg-green-900/20 border-l-4 border-yellow-500 rounded-lg p-6 mb-8">
+            <div class="bg-forest/10 border-l-4 border-yellow-500 rounded-lg p-6 mb-8">
                 <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     After the millennium, the final judgment, and the destruction of the present heavens and earth, 
                     God will create new heavens and a new earth. The saved will dwell with God in eternal glory 
                     forever; the unsaved will be cast into the lake of fire for eternal separation from God.
@@ -484,18 +520,18 @@
                 <div class="bg-gradient-to-br from-green-900/30 to-green-950/30 rounded-2xl p-8 border border-yellow-800/30 text-center">
                     <div class="text-5xl mb-4">😇</div>
                     <h4 class="text-green-400 font-bold text-xl mb-3">The Saved</h4>
-                    <p class="text-stone-300 text-sm mb-4">Eternal life in the presence of God</p>
-                    <ul class="text-stone-400 text-sm text-left space-y-2">
+                    <p class="text-brown-light text-sm mb-4">Eternal life in the presence of God</p>
+                    <ul class="text-brown-light text-sm text-left space-y-2">
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500">•</span>
+                            <span class="text-forest">•</span>
                             <span>New heavens & new earth</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500">•</span>
+                            <span class="text-forest">•</span>
                             <span>No more tears, death, or pain</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-green-500">•</span>
+                            <span class="text-forest">•</span>
                             <span>God dwells among His people</span>
                         </li>
                     </ul>
@@ -504,8 +540,8 @@
                 <div class="bg-gradient-to-br from-red-900/30 to-red-950/30 rounded-2xl p-8 border border-red-800/30 text-center">
                     <div class="text-5xl mb-4">⚠️</div>
                     <h4 class="text-red-400 font-bold text-xl mb-3">The Unsaved</h4>
-                    <p class="text-stone-300 text-sm mb-4">Eternal separation from God</p>
-                    <ul class="text-stone-400 text-sm text-left space-y-2">
+                    <p class="text-brown-light text-sm mb-4">Eternal separation from God</p>
+                    <ul class="text-brown-light text-sm text-left space-y-2">
                         <li class="flex items-start gap-2">
                             <span class="text-red-500">•</span>
                             <span>Great White Throne judgment</span>
@@ -522,24 +558,24 @@
                 </div>
             </div>
             
-            <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Key Scripture References</h4>
+            <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Key Scripture References</h4>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Revelation 20:11-15</p>
-                        <p class="text-xs text-stone-400">Great White Throne judgment; anyone not in Book of Life cast into lake of fire</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Revelation 20:11-15</p>
+                        <p class="text-xs text-brown-light">Great White Throne judgment; anyone not in Book of Life cast into lake of fire</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Revelation 21:1-4</p>
-                        <p class="text-xs text-stone-400">New heaven, new earth; God will wipe away every tear; no more death</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Revelation 21:1-4</p>
+                        <p class="text-xs text-brown-light">New heaven, new earth; God will wipe away every tear; no more death</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">2 Peter 3:10-13</p>
-                        <p class="text-xs text-stone-400">Elements will melt with fervent heat; we look for new heavens and a new earth</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">2 Peter 3:10-13</p>
+                        <p class="text-xs text-brown-light">Elements will melt with fervent heat; we look for new heavens and a new earth</p>
                     </div>
-                    <div class="p-3 bg-stone-800/50 rounded-lg">
-                        <p class="text-white font-semibold text-sm">Revelation 21:8</p>
-                        <p class="text-xs text-stone-400">The cowardly, unbelieving, abominable... their part in the lake which burns with fire</p>
+                    <div class="p-3 bg-beige rounded-lg">
+                        <p class="text-brown font-semibold text-sm">Revelation 21:8</p>
+                        <p class="text-xs text-brown-light">The cowardly, unbelieving, abominable... their part in the lake which burns with fire</p>
                     </div>
                 </div>
             </div>
@@ -550,16 +586,16 @@
     <section id="doctrine-v" class="py-20 bg-black">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-800 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">V</div>
+                <div class="w-16 h-16 bg-gradient-to-br from-green-700 to-green-800 rounded-2xl flex items-center justify-center text-brown font-bold text-2xl">V</div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white">Stewardship</h2>
-                    <p class="text-stone-500">Faithful with All God Has Given</p>
+                    <h2 class="text-3xl font-bold text-brown">Stewardship</h2>
+                    <p class="text-brown-light">Faithful with All God Has Given</p>
                 </div>
             </div>
             
-            <div class="bg-green-900/20 border-l-4 border-yellow-500 rounded-lg p-6 mb-8">
+            <div class="bg-forest/10 border-l-4 border-yellow-500 rounded-lg p-6 mb-8">
                 <h3 class="text-green-400 font-bold mb-2">Core Truth</h3>
-                <p class="text-stone-300 leading-relaxed">
+                <p class="text-brown-light leading-relaxed">
                     We are stewards—not owners—of all that God has entrusted to us: time, talents, and treasure. 
                     The first portion belongs to God. We honor Him with proportionate, willing, and cheerful 
                     giving, recognizing that everything we have comes from His hand.
@@ -567,38 +603,38 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">Old Testament Pattern</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">Old Testament Pattern</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Genesis 14:20</p>
-                            <p class="text-sm text-stone-400">Abraham gave Melchizedek a tenth of all</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Genesis 14:20</p>
+                            <p class="text-sm text-brown-light">Abraham gave Melchizedek a tenth of all</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Leviticus 27:30</p>
-                            <p class="text-sm text-stone-400">All the tithe of the land... is the LORD's. It is holy to the LORD</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Leviticus 27:30</p>
+                            <p class="text-sm text-brown-light">All the tithe of the land... is the LORD's. It is holy to the LORD</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Malachi 3:10</p>
-                            <p class="text-sm text-stone-400">Bring all the tithes into the storehouse... Test Me now in this</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Malachi 3:10</p>
+                            <p class="text-sm text-brown-light">Bring all the tithes into the storehouse... Test Me now in this</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <h4 class="text-green-500 font-bold text-sm uppercase tracking-wider mb-4">New Testament Principles</h4>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <h4 class="text-forest font-bold text-sm uppercase tracking-wider mb-4">New Testament Principles</h4>
                     <div class="space-y-3">
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">1 Corinthians 16:2</p>
-                            <p class="text-sm text-stone-400">On the first day of the week let each one of you lay something aside, as he may prosper</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">1 Corinthians 16:2</p>
+                            <p class="text-sm text-brown-light">On the first day of the week let each one of you lay something aside, as he may prosper</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">2 Corinthians 9:6-7</p>
-                            <p class="text-sm text-stone-400">He who sows bountifully will also reap bountifully... God loves a cheerful giver</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">2 Corinthians 9:6-7</p>
+                            <p class="text-sm text-brown-light">He who sows bountifully will also reap bountifully... God loves a cheerful giver</p>
                         </div>
-                        <div class="p-3 bg-stone-800/50 rounded-lg">
-                            <p class="text-white font-semibold">Hebrews 7:2</p>
-                            <p class="text-sm text-stone-400">Abraham gave a tenth of all (NT affirmation of the tithe)</p>
+                        <div class="p-3 bg-beige rounded-lg">
+                            <p class="text-brown font-semibold">Hebrews 7:2</p>
+                            <p class="text-sm text-brown-light">Abraham gave a tenth of all (NT affirmation of the tithe)</p>
                         </div>
                     </div>
                 </div>
@@ -609,27 +645,27 @@
     <!-- Discussion Questions -->
     <section class="py-20 bg-stone-950">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">Discussion Questions</h2>
+            <h2 class="text-3xl font-bold text-brown text-center mb-12">Discussion Questions</h2>
             <div class="space-y-4">
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 1</p>
-                    <p class="text-stone-300">What is the Great Commission, and how are you personally fulfilling it in your life?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 1</p>
+                    <p class="text-brown-light">What is the Great Commission, and how are you personally fulfilling it in your life?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 2</p>
-                    <p class="text-stone-300">How does the blessed hope of the rapture affect the way you live today?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 2</p>
+                    <p class="text-brown-light">How does the blessed hope of the rapture affect the way you live today?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 3</p>
-                    <p class="text-stone-300">Why is it important that the church is kept from the tribulation? What comfort does this bring?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 3</p>
+                    <p class="text-brown-light">Why is it important that the church is kept from the tribulation? What comfort does this bring?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 4</p>
-                    <p class="text-stone-300">How does understanding the eternal state (heaven and hell) motivate evangelism?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 4</p>
+                    <p class="text-brown-light">How does understanding the eternal state (heaven and hell) motivate evangelism?</p>
                 </div>
-                <div class="bg-stone-900 rounded-xl p-6 border border-stone-800">
-                    <p class="text-green-500 font-bold text-sm mb-2">Question 5</p>
-                    <p class="text-stone-300">In what areas of your life do you need to grow as a faithful steward of what God has given you?</p>
+                <div class="bg-cream rounded-xl p-6 border border-stone-800">
+                    <p class="text-forest font-bold text-sm mb-2">Question 5</p>
+                    <p class="text-brown-light">In what areas of your life do you need to grow as a faithful steward of what God has given you?</p>
                 </div>
             </div>
         </div>
@@ -639,16 +675,16 @@
     <section class="py-20 bg-gradient-to-b from-black to-stone-900/20">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <div class="text-6xl mb-6">🎓</div>
-            <h2 class="text-4xl font-bold text-white mb-4">Congratulations!</h2>
-            <p class="text-xl text-stone-400 mb-8 max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-brown mb-4">Congratulations!</h2>
+            <p class="text-xl text-brown-light mb-8 max-w-2xl mx-auto">
                 You've completed all 5 weeks of Rooted! You now have a solid foundation in 22 essential 
                 doctrines of the Christian faith. Go and share what you've learned!
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <button class="bg-gradient-to-r from-green-700 to-green-600 px-8 py-4 rounded-xl font-bold text-lg">
+                <button class="bg-gradient-to-r from-forest to-forest-light px-8 py-4 rounded-xl font-bold text-lg">
                     Get Your Certificate
                 </button>
-                <button class="border border-stone-700 hover:border-stone-600 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                <button class="border border-beige-dark hover:border-beige px-8 py-4 rounded-xl font-semibold text-lg transition">
                     Review All Weeks
                 </button>
             </div>
@@ -660,23 +696,23 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <a href="week4.html" class="flex items-center gap-4 group">
-                    <div class="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center group-hover:bg-stone-700 transition">
-                        <svg class="w-5 h-5 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-beige rounded-xl flex items-center justify-center group-hover:bg-beige transition">
+                        <svg class="w-5 h-5 text-brown-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                         </svg>
                     </div>
                     <div>
-                        <p class="text-stone-500 text-sm">Previous</p>
-                        <p class="text-white font-semibold">Week 4: Christian Life</p>
+                        <p class="text-brown-light text-sm">Previous</p>
+                        <p class="text-brown font-semibold">Week 4: Christian Life</p>
                     </div>
                 </a>
                 <a href="#" class="flex items-center gap-4 group">
                     <div class="text-right">
-                        <p class="text-stone-500 text-sm">Start Over</p>
-                        <p class="text-white font-semibold">Week 1: Foundations</p>
+                        <p class="text-brown-light text-sm">Start Over</p>
+                        <p class="text-brown font-semibold">Week 1: Foundations</p>
                     </div>
-                    <div class="w-12 h-12 bg-amber-700 rounded-xl flex items-center justify-center group-hover:bg-green-700 transition">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-amber-700 rounded-xl flex items-center justify-center group-hover:bg-forest transition">
+                        <svg class="w-5 h-5 text-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                         </svg>
                     </div>
@@ -690,12 +726,13 @@
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="flex items-center justify-center gap-3 mb-4">
                 <img src="images/wisdom_app_icon.png" alt="Wisdom" class="w-10 h-10 rounded-lg">
-                <span class="text-white font-bold tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
+                <span class="text-brown font-bold tracking-wide" style="font-family: Georgia, serif;">WISDOM</span>
             </div>
-            <p class="text-stone-500 text-sm mb-4">Bible Study Curriculum by Adetoro Oriaifo</p>
+            <p class="text-brown-light text-sm mb-4">Bible Study Curriculum by Adetoro Oriaifo</p>
             <p class="text-stone-600 text-xs">Based on the ordination preparation of Pastor Brian Ellis Bailey</p>
         </div>
     </footer>
 
+    <script src="scripts.js" defer></script>
 </body>
 </html>

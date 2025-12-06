@@ -12,37 +12,73 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
+    <meta name="theme-color" content="#FDF8F3">
     
     <!-- Preconnect & Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: {
+                        DEFAULT: '#F3E7D3',
+                        light: '#F8F2E6',
+                    },
+                    beige: {
+                        DEFAULT: '#E9DCC4',
+                        dark: '#DED0B8',
+                    },
+                    forest: {
+                        DEFAULT: '#2D5A3D',
+                        light: '#3A7D4A',
+                        dark: '#1E4A2D',
+                    },
+                    brown: {
+                        DEFAULT: '#4A3A28',
+                        dark: '#4A3A28',
+                        medium: '#7B5E3C',
+                        light: '#C6A77D',
+                        accent: '#7B5E3C',
+                        warm: '#7B5E3C',
+                    }
+                },
+                fontFamily: {
+                    cinzel: ['Cinzel', 'serif'],
+                    inter: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         .font-cinzel { font-family: 'Cinzel', serif; }
         .font-inter { font-family: 'Inter', sans-serif; }
-        .gradient-gold {
+        .bg-gradient-to-r from-brown-warm via-brown-light to-brown-warm bg-clip-text text-transparent {
             background: linear-gradient(135deg, #D4A84B, #F5D78E, #C9983A);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-b from-stone-900 via-stone-800 to-stone-900 text-white font-inter min-h-screen flex flex-col">
+<body class="bg-cream-light text-brown font-inter min-h-screen flex flex-col">
     
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-900/95 backdrop-blur-md border-b border-stone-700/50">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-md border-b border-beige-dark/50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
-                <span class="font-cinzel text-xl font-bold tracking-wider text-amber-100">WISDOM</span>
+                <span class="font-cinzel text-xl font-bold tracking-wider text-brown">WISDOM</span>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Home</a>
-                <a href="workbooks.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Workbooks</a>
-                <a href="contact.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Contact</a>
+                <a href="index.html" class="text-brown-light hover:text-forest transition text-sm">Home</a>
+                <a href="workbooks.html" class="text-brown-light hover:text-forest transition text-sm">Workbooks</a>
+                <a href="contact.html" class="text-brown-light hover:text-forest transition text-sm">Contact</a>
             </div>
-            <a href="week1.html" class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition text-white">
+            <a href="week1.html" class="bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-5 py-2 rounded-lg text-sm font-semibold transition text-white">
                 Start Learning
             </a>
         </div>
@@ -53,65 +89,66 @@
         <div class="text-center max-w-2xl">
             <!-- Large 404 -->
             <div class="mb-8">
-                <span class="font-cinzel text-9xl md:text-[12rem] font-bold gradient-gold opacity-20">404</span>
+                <span class="font-cinzel text-9xl md:text-[12rem] font-bold bg-gradient-to-r from-brown-warm via-brown-light to-brown-warm bg-clip-text text-transparent opacity-20">404</span>
             </div>
             
             <!-- Message -->
-            <h1 class="font-cinzel text-3xl md:text-4xl font-bold text-amber-100 mb-4">
+            <h1 class="font-cinzel text-3xl md:text-4xl font-bold text-brown mb-4">
                 Page Not Found
             </h1>
-            <p class="text-stone-400 text-lg mb-8 max-w-md mx-auto">
+            <p class="text-brown-light text-lg mb-8 max-w-md mx-auto">
                 The page you're looking for seems to have wandered off. Let's get you back on the path.
             </p>
             
             <!-- Verse -->
-            <div class="bg-stone-800/50 rounded-xl p-6 mb-8 border border-stone-700/50">
-                <p class="text-amber-100/90 italic mb-2">
+            <div class="bg-beige rounded-xl p-6 mb-8 border border-beige-dark/50">
+                <p class="text-brown/90 italic mb-2">
                     "Your word is a lamp for my feet, a light on my path."
                 </p>
-                <p class="text-stone-500 text-sm">— Psalm 119:105</p>
+                <p class="text-brown-light text-sm">— Psalm 119:105</p>
             </div>
             
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="index.html" class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-8 py-3 rounded-lg font-semibold transition text-white">
+                <a href="index.html" class="bg-gradient-to-r from-forest to-forest-light hover:from-forest-light hover:to-forest px-8 py-3 rounded-lg font-semibold transition text-brown">
                     Return Home
                 </a>
-                <a href="week1.html" class="bg-stone-800 hover:bg-stone-700 border border-stone-600 px-8 py-3 rounded-lg font-semibold transition text-white">
+                <a href="week1.html" class="bg-beige hover:bg-beige border border-beige px-8 py-3 rounded-lg font-semibold transition text-brown">
                     Start Week 1
                 </a>
             </div>
             
             <!-- Quick Links -->
-            <div class="mt-12 pt-8 border-t border-stone-700/50">
-                <p class="text-stone-500 text-sm mb-4">Or try one of these pages:</p>
+            <div class="mt-12 pt-8 border-t border-beige-dark/50">
+                <p class="text-brown-light text-sm mb-4">Or try one of these pages:</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="week1.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Week 1</a>
+                    <a href="week1.html" class="text-green hover:text-brown text-sm transition">Week 1</a>
                     <span class="text-stone-600">•</span>
-                    <a href="week2.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Week 2</a>
+                    <a href="week2.html" class="text-green hover:text-brown text-sm transition">Week 2</a>
                     <span class="text-stone-600">•</span>
-                    <a href="week3.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Week 3</a>
+                    <a href="week3.html" class="text-green hover:text-brown text-sm transition">Week 3</a>
                     <span class="text-stone-600">•</span>
-                    <a href="week4.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Week 4</a>
+                    <a href="week4.html" class="text-green hover:text-brown text-sm transition">Week 4</a>
                     <span class="text-stone-600">•</span>
-                    <a href="week5.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Week 5</a>
+                    <a href="week5.html" class="text-green hover:text-brown text-sm transition">Week 5</a>
                     <span class="text-stone-600">•</span>
-                    <a href="workbooks.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Workbooks</a>
+                    <a href="workbooks.html" class="text-green hover:text-brown text-sm transition">Workbooks</a>
                     <span class="text-stone-600">•</span>
-                    <a href="contact.html" class="text-amber-200 hover:text-amber-100 text-sm transition">Contact</a>
+                    <a href="contact.html" class="text-green hover:text-brown text-sm transition">Contact</a>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-stone-900 border-t border-stone-800 py-8">
+    <footer class="bg-cream border-t border-stone-800 py-8">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-stone-500 text-sm">
+            <p class="text-brown-light text-sm">
                 © 2024 WISDOM Bible Study. All rights reserved.
             </p>
         </div>
     </footer>
 
+    <script src="scripts.js" defer></script>
 </body>
 </html>
