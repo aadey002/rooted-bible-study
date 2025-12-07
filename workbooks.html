@@ -35,8 +35,11 @@
         .workbook-card:hover { transform: translateY(-4px); }
         .workbook-card h3 { font-family: 'Cinzel', serif; font-size: 1.25rem; color: var(--dark-brown); margin-bottom: 0.5rem; }
         .workbook-card p { color: var(--medium-brown); font-size: 0.95rem; margin-bottom: 1rem; text-align: left; }
-        .btn-download { background: var(--light-brown); color: var(--dark-brown); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; }
+        .btn-download { background: var(--light-brown); color: var(--dark-brown); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; margin-right: 0.5rem; margin-bottom: 0.5rem; }
         .btn-download:hover { background: var(--cream); }
+        .btn-view { background: var(--soft-beige); color: var(--dark-brown); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; border: 2px solid var(--light-brown); }
+        .btn-view:hover { background: var(--light-brown); }
+        .workbook-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .complete-workbook { background: var(--soft-beige); border-radius: 12px; padding: 2rem; margin-top: 3rem; text-align: center; }
         .complete-workbook h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--dark-brown); margin-bottom: 1rem; }
         .complete-workbook p { color: var(--medium-brown); margin-bottom: 1.5rem; }
@@ -82,44 +85,69 @@
             <div class="workbook-card">
                 <h3>Week 1: Foundations</h3>
                 <p>Scripture, The Trinity, God the Father, Jesus Christ, The Holy Spirit</p>
-                <a href="pdfs/Week1_Foundations_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week1_Foundations_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week1_Foundations_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 2: Humanity and Salvation</h3>
                 <p>Angels, Satan and Demons, Man, Sin, Salvation</p>
-                <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 3: The Church</h3>
                 <p>The Church, Baptism, The Lords Supper, Church Leadership</p>
-                <a href="pdfs/Week3_The_Church_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week3_The_Church_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week3_The_Church_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 4: Christian Life</h3>
                 <p>Sanctification, Security of the Believer, Prayer, Worship</p>
-                <a href="pdfs/Week4_Christian_Life_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week4_Christian_Life_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week4_Christian_Life_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 5: Spiritual Gifts</h3>
                 <p>Spiritual Gifts, Great Commission, Evangelism, Discipleship</p>
-                <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 6: End Times</h3>
                 <p>Second Coming, Rapture, Tribulation, Millennium</p>
-                <a href="pdfs/Week6_End_Times_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week6_End_Times_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week6_End_Times_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
             <div class="workbook-card">
                 <h3>Week 7: Eternity and Mission</h3>
                 <p>Judgments, Heaven, Hell, Eternity, Our Mission</p>
-                <a href="pdfs/Week7_Eternity_and_Mission_Workbook.pdf" class="btn-download" download>Download PDF</a>
+                <div class="workbook-buttons">
+                    <a href="pdfs/Week7_Eternity_and_Mission_Workbook.pdf" class="btn-download" download>Download</a>
+                    <a href="pdfs/Week7_Eternity_and_Mission_Workbook.pdf" class="btn-view" target="_blank">View Online</a>
+                </div>
             </div>
         </div>
 
         <div class="complete-workbook">
+            <img src="images/workbook cover.png" alt="Complete Workbook Cover" style="max-width: 200px; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(74,58,40,0.2);">
             <h3>Complete Workbook</h3>
-            <p>Download the complete 7-week curriculum workbook in one PDF file.</p>
-            <a href="pdfs/Church_Doctrinal_Statement_Complete_Workbook_Brown cover.pdf" class="btn-primary" download>Download Complete Workbook</a>
+            <p>Download or view the complete 7-week curriculum workbook in one PDF file.</p>
+            <div class="workbook-buttons" style="justify-content: center;">
+                <a href="pdfs/Church_Doctrinal_Statement_Complete_Workbook_Brown cover updated.pdf" class="btn-primary" download>Download Complete Workbook</a>
+                <a href="pdfs/Church_Doctrinal_Statement_Complete_Workbook_Brown cover updated.pdf" class="btn-view" target="_blank" style="margin-left: 1rem;">View Online</a>
+            </div>
         </div>
     </main>
 
