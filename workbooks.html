@@ -3,503 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Free Bible Study Workbooks | WISDOM Curriculum - Download PDF</title>
-    <meta name="title" content="Free Bible Study Workbooks | WISDOM Curriculum - Download PDF">
-    <meta name="description" content="Download free PDF Bible study workbooks for all 7 weeks of the Church Doctrinal Statement of Faith curriculum. Printable study guides covering 22 Christian doctrines with fill-in-the-blank exercises and reflection questions.">
-    <meta name="keywords" content="free Bible study workbook, printable Bible study, PDF workbook download, Christian doctrine study guide, Church Doctrinal Statement of Faith curriculum materials, Bible study handouts, church study materials">
-    <meta name="author" content="Pastor Bailey">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourdomain.com/workbooks.html">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/workbooks.html">
-    <meta property="og:title" content="Free Bible Study Workbooks | WISDOM Curriculum">
-    <meta property="og:description" content="Download free PDF Bible study workbooks for all 7 weeks of the Church Doctrinal Statement of Faith curriculum. Printable study guides with exercises.">
-    <meta property="og:image" content="https://yourdomain.com/images/wisdom_book.png">
-    <meta property="og:site_name" content="Church Doctrinal Statement of Faith Bible Course">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free Bible Study Workbooks | WISDOM Curriculum">
-    <meta name="twitter:description" content="Download free PDF Bible study workbooks for all 7 weeks of the Church Doctrinal Statement of Faith curriculum.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/wisdom_book.png">
-    
-    <!-- Structured Data - Digital Product -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "DigitalDocument",
-        "name": "Church Doctrinal Statement of Faith Bible Course Workbooks",
-        "description": "Free downloadable PDF workbooks for the 7-week Church Doctrinal Statement of Faith Bible Course curriculum covering 22 Christian doctrines",
-        "encodingFormat": "application/pdf",
-        "isAccessibleForFree": true,
-        "creator": {
-            "@type": "Person",
-            "name": "Pastor Bailey"
-        },
-        "provider": {
-            "@type": "Organization",
-            "name": "Church Doctrinal Statement of Faith Bible Course"
-        }
-    }
-    </script>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="images/wisdom_icon_192.png">
-    <meta name="theme-color" content="#1c1917">
-    
-    <!-- Preconnect & Stylesheets -->
+    <title>Free Bible Study Workbooks | Church Doctrinal Statement of Faith Bible Course</title>
+    <meta name="description" content="Download free PDF Bible study workbooks for all 7 weeks of the Church Doctrinal Statement of Faith curriculum covering 22 Christian doctrines.">
+    <meta name="author" content="Pastor Brian Ellis Bailey">
+    <link rel="icon" type="image/png" href="images/bible_course_logo.png">
+    <meta name="theme-color" content="#4A3A28">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .font-cinzel { font-family: 'Cinzel', serif; }
-        .font-inter { font-family: 'Inter', sans-serif; }
-        .gradient-gold {
-            background: linear-gradient(135deg, #D4A84B, #F5D78E, #C9983A);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .tab-btn.active { 
-            background: linear-gradient(135deg, #15803d, #166534);
-            color: white;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --dark-brown: #4A3A28; --medium-brown: #7B5E3C; --light-brown: #C6A77D; --cream: #F3E7D3; --soft-beige: #E9DCC4; --white: #FFFFFF; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--cream); color: var(--dark-brown); line-height: 1.6; }
+        nav { background: var(--dark-brown); padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(74,58,40,0.3); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .nav-brand img { height: 45px; border-radius: 6px; }
+        .nav-brand-text { color: var(--light-brown); font-size: 1rem; font-weight: 700; display: block; }
+        .nav-brand-subtitle { color: var(--cream); font-size: 0.75rem; opacity: 0.9; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+        .nav-links a { color: var(--cream); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--light-brown); }
+        .hero { background: linear-gradient(135deg, var(--dark-brown) 0%, var(--medium-brown) 100%); padding: 3rem 2rem; text-align: center; }
+        .hero h1 { font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--cream); margin-bottom: 0.5rem; }
+        .hero p { color: var(--soft-beige); font-size: 1.1rem; }
+        .content { padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .content h2 { font-family: 'Cinzel', serif; font-size: 1.75rem; color: var(--dark-brown); margin: 2rem 0 1.5rem; text-align: center; }
+        .content p { color: var(--medium-brown); margin-bottom: 1rem; text-align: center; }
+        .workbooks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .workbook-card { background: var(--white); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(74,58,40,0.1); border-left: 4px solid var(--light-brown); transition: transform 0.3s ease; }
+        .workbook-card:hover { transform: translateY(-4px); }
+        .workbook-card h3 { font-family: 'Cinzel', serif; font-size: 1.25rem; color: var(--dark-brown); margin-bottom: 0.5rem; }
+        .workbook-card p { color: var(--medium-brown); font-size: 0.95rem; margin-bottom: 1rem; text-align: left; }
+        .btn-download { background: var(--light-brown); color: var(--dark-brown); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; }
+        .btn-download:hover { background: var(--cream); }
+        .complete-workbook { background: var(--soft-beige); border-radius: 12px; padding: 2rem; margin-top: 3rem; text-align: center; }
+        .complete-workbook h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--dark-brown); margin-bottom: 1rem; }
+        .complete-workbook p { color: var(--medium-brown); margin-bottom: 1.5rem; }
+        .btn-primary { background: var(--dark-brown); color: var(--cream); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; }
+        .btn-primary:hover { background: var(--medium-brown); }
+        footer { background: var(--soft-beige); padding: 2rem; text-align: center; border-top: 3px solid var(--light-brown); margin-top: 3rem; }
+        .footer-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-links a { color: var(--medium-brown); text-decoration: none; }
+        .footer-links a:hover { color: var(--dark-brown); }
+        .footer-copyright { color: var(--medium-brown); font-size: 0.9rem; }
+        @media (max-width: 768px) { .nav-container { flex-direction: column; text-align: center; } .nav-links { gap: 1rem; justify-content: center; } .hero h1 { font-size: 1.75rem; } }
     </style>
 </head>
-<body class="bg-gradient-to-b from-stone-900 via-stone-800 to-stone-900 text-white font-inter min-h-screen">
-    
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-900/95 backdrop-blur-lg border-b border-stone-700">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3">
-                <img src="images/wisdom_app.png" alt="Wisdom Logo" class="w-10 h-10 rounded-lg">
-                <span class="font-cinzel text-xl font-bold text-amber-100">Church Doctrinal Statement of Faith</span>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/bible_course_logo.png" alt="Church Doctrinal Statement of Faith">
+                <div>
+                    <span class="nav-brand-text">Church Doctrinal Statement of Faith</span>
+                    <span class="nav-brand-subtitle">Bible Course by Pastor Brian Ellis Bailey</span>
+                </div>
             </a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-stone-400 hover:text-amber-200 transition text-sm">Home</a>
-                <a href="index.html#curriculum" class="text-stone-400 hover:text-amber-200 transition text-sm">Curriculum</a>
-                <a href="index.html#about" class="text-stone-400 hover:text-amber-200 transition text-sm">About</a>
-                <a href="workbooks.html" class="text-green-500 font-semibold text-sm">Workbooks</a>
-                <a href="apparel.html" class="text-stone-400 hover:text-amber-200 transition text-sm">ROOTED Apparel</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="week1.html">Weeks</a>
+                <a href="workbooks.html">Workbooks</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <a href="week1.html" class="bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 px-5 py-2 rounded-lg text-sm font-semibold transition text-white">
-                Start Learning
-            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-16 relative overflow-hidden">
-        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-900/20 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-amber-900/10 rounded-full blur-3xl"></div>
-        
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <span class="inline-block px-4 py-2 bg-green-900/40 border border-green-700/50 rounded-full text-green-400 text-sm font-medium mb-6">
-                📚 Study Materials
-            </span>
-            <h1 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-amber-100">Download Workbooks</h1>
-            <p class="text-stone-400 text-lg max-w-2xl mx-auto">
-                Print-ready PDF workbooks for each week of the Wisdom curriculum. 
-                Perfect for personal study, small groups, or classroom teaching.
-            </p>
-        </div>
+    <section class="hero">
+        <h1>Free Bible Study Workbooks</h1>
+        <p>Download PDF workbooks for each week of the curriculum</p>
     </section>
 
-    <!-- Tabs Section -->
-    <section class="py-12 relative z-10">
-        <div class="max-w-5xl mx-auto px-6">
-            
-            <!-- Tab Navigation -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button onclick="showTab('week1')" id="tab-week1" class="tab-btn active px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    Week 1
-                </button>
-                <button onclick="showTab('week2')" id="tab-week2" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    Week 2
-                </button>
-                <button onclick="showTab('week3')" id="tab-week3" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    Week 3
-                </button>
-                <button onclick="showTab('week4')" id="tab-week4" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    Week 4
-                </button>
-                <button onclick="showTab('week5')" id="tab-week5" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    Week 5
-                </button>
-                <button onclick="showTab('all')" id="tab-all" class="tab-btn px-6 py-3 rounded-xl font-semibold text-sm bg-stone-700/50 text-stone-300 hover:bg-stone-600/50 transition border border-stone-600/30">
-                    📦 All Weeks
-                </button>
+    <main class="content">
+        <h2>Weekly Workbooks</h2>
+        <p>Each workbook contains study guides, reflection questions, and space for notes to deepen your understanding of Christian doctrine.</p>
+
+        <div class="workbooks-grid">
+            <div class="workbook-card">
+                <h3>Week 1: Foundations</h3>
+                <p>Scripture, The Trinity, God the Father, Jesus Christ, The Holy Spirit</p>
+                <a href="pdfs/Week1_Foundations_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- Week 1 Content -->
-            <div id="content-week1" class="tab-content active">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-green-700 to-green-600 rounded-2xl flex items-center justify-center text-white font-cinzel text-2xl font-bold shadow-lg flex-shrink-0">
-                            1
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">Foundations</h3>
-                            <p class="text-stone-400 mb-1">Doctrines A-C</p>
-                            <p class="text-green-400 text-sm font-medium">The Scriptures • The Trinity • Angels & Demons</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">What's Included:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Complete scripture reference guide
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Note-taking pages for each doctrine
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Discussion questions for groups
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Memory verse cards
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Personal reflection prompts
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="pdfs/Week1_Foundations_Workbook.pdf" download class="flex-1 bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                            ⬇️ Download PDF
-                        </a>
-                        <a href="week1.html" class="px-6 py-4 border border-stone-600 text-stone-300 hover:bg-stone-700/50 rounded-xl font-semibold transition">
-                            View Online →
-                        </a>
-                    </div>
-                </div>
+            <div class="workbook-card">
+                <h3>Week 2: Humanity and Salvation</h3>
+                <p>Angels, Satan and Demons, Man, Sin, Salvation</p>
+                <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- Week 2 Content -->
-            <div id="content-week2" class="tab-content">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-amber-700 to-amber-600 rounded-2xl flex items-center justify-center text-white font-cinzel text-2xl font-bold shadow-lg flex-shrink-0">
-                            2
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">God & Humanity</h3>
-                            <p class="text-stone-400 mb-1">Doctrines D-F</p>
-                            <p class="text-amber-400 text-sm font-medium">God the Father • God the Son • God the Holy Spirit</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">What's Included:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-500">✓</span> Attributes of each Person of the Trinity
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-500">✓</span> Scripture mapping exercises
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-500">✓</span> Note-taking pages for each doctrine
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-500">✓</span> Discussion questions for groups
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-500">✓</span> Personal reflection prompts
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" download class="flex-1 bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                            ⬇️ Download PDF
-                        </a>
-                        <a href="week2.html" class="px-6 py-4 border border-stone-600 text-stone-300 hover:bg-stone-700/50 rounded-xl font-semibold transition">
-                            View Online →
-                        </a>
-                    </div>
-                </div>
+            <div class="workbook-card">
+                <h3>Week 3: The Church</h3>
+                <p>The Church, Baptism, The Lords Supper, Church Leadership</p>
+                <a href="pdfs/Week3_The_Church_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- Week 3 Content -->
-            <div id="content-week3" class="tab-content">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-emerald-700 to-emerald-600 rounded-2xl flex items-center justify-center text-white font-cinzel text-2xl font-bold shadow-lg flex-shrink-0">
-                            3
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">Humanity & Sin</h3>
-                            <p class="text-stone-400 mb-1">Doctrines G-J</p>
-                            <p class="text-emerald-400 text-sm font-medium">Man • Original Sin • Atonement • Grace & Faith</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">What's Included:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-emerald-500">✓</span> Creation and fall of humanity studies
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-emerald-500">✓</span> Atonement scripture breakdown
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-emerald-500">✓</span> Note-taking pages for each doctrine
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-emerald-500">✓</span> Discussion questions for groups
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-emerald-500">✓</span> Personal reflection prompts
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="pdfs/Week3_The_Church_Workbook.pdf" download class="flex-1 bg-gradient-to-r from-emerald-700 to-emerald-600 hover:from-emerald-600 hover:to-emerald-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                            ⬇️ Download PDF
-                        </a>
-                        <a href="week3.html" class="px-6 py-4 border border-stone-600 text-stone-300 hover:bg-stone-700/50 rounded-xl font-semibold transition">
-                            View Online →
-                        </a>
-                    </div>
-                </div>
+            <div class="workbook-card">
+                <h3>Week 4: Christian Life</h3>
+                <p>Sanctification, Security of the Believer, Prayer, Worship</p>
+                <a href="pdfs/Week4_Christian_Life_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- Week 4 Content -->
-            <div id="content-week4" class="tab-content">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-orange-700 to-orange-600 rounded-2xl flex items-center justify-center text-white font-cinzel text-2xl font-bold shadow-lg flex-shrink-0">
-                            4
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">The Church</h3>
-                            <p class="text-stone-400 mb-1">Doctrines K-N</p>
-                            <p class="text-orange-400 text-sm font-medium">Repentance • The Church • Baptisms • Gifts of the Spirit</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">What's Included:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-orange-500">✓</span> Spiritual gifts assessment guide
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-orange-500">✓</span> Church purpose and mission study
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-orange-500">✓</span> Note-taking pages for each doctrine
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-orange-500">✓</span> Discussion questions for groups
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-orange-500">✓</span> Personal reflection prompts
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="pdfs/Week4_Christian_Life_Workbook.pdf" download class="flex-1 bg-gradient-to-r from-orange-700 to-orange-600 hover:from-orange-600 hover:to-orange-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                            ⬇️ Download PDF
-                        </a>
-                        <a href="week4.html" class="px-6 py-4 border border-stone-600 text-stone-300 hover:bg-stone-700/50 rounded-xl font-semibold transition">
-                            View Online →
-                        </a>
-                    </div>
-                </div>
+            <div class="workbook-card">
+                <h3>Week 5: Spiritual Gifts</h3>
+                <p>Spiritual Gifts, Great Commission, Evangelism, Discipleship</p>
+                <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- Week 5 Content -->
-            <div id="content-week5" class="tab-content">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-rose-700 to-rose-600 rounded-2xl flex items-center justify-center text-white font-cinzel text-2xl font-bold shadow-lg flex-shrink-0">
-                            5
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">Last Things</h3>
-                            <p class="text-stone-400 mb-1">Doctrines O-R</p>
-                            <p class="text-rose-400 text-sm font-medium">Sanctification • Healing • Resurrection • Second Coming</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">What's Included:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-rose-500">✓</span> End times timeline chart
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-rose-500">✓</span> Prophecy scripture guide
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-rose-500">✓</span> Note-taking pages for each doctrine
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-rose-500">✓</span> Discussion questions for groups
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-rose-500">✓</span> Personal reflection prompts
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex gap-4">
-                        <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" download class="flex-1 bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-600 hover:to-rose-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                            ⬇️ Download PDF
-                        </a>
-                        <a href="week5.html" class="px-6 py-4 border border-stone-600 text-stone-300 hover:bg-stone-700/50 rounded-xl font-semibold transition">
-                            View Online →
-                        </a>
-                    </div>
-                </div>
+            <div class="workbook-card">
+                <h3>Week 6: End Times</h3>
+                <p>Second Coming, Rapture, Tribulation, Millennium</p>
+                <a href="pdfs/Week6_End_Times_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
-
-            <!-- All Weeks Content -->
-            <div id="content-all" class="tab-content">
-                <div class="bg-stone-800/60 border border-stone-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
-                    <div class="flex items-start gap-6 mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-stone-600 to-stone-500 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg flex-shrink-0">
-                            📦
-                        </div>
-                        <div>
-                            <h3 class="font-cinzel text-2xl font-bold text-amber-100 mb-2">Complete Curriculum</h3>
-                            <p class="text-stone-400 mb-1">All 7 Weeks • Doctrines A-R</p>
-                            <p class="text-green-400 text-sm font-medium">Everything you need in one download</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-stone-900/50 rounded-xl p-5 mb-6 border border-stone-700/30">
-                        <h4 class="font-semibold text-amber-200 mb-3 text-sm uppercase tracking-wide">Complete Package Includes:</h4>
-                        <ul class="space-y-2 text-stone-300 text-sm">
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> All 5 weekly workbooks (100+ pages)
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Complete scripture reference guide
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Leader's guide with teaching notes
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> All memory verse cards
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Group discussion question bank
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">✓</span> Quick reference doctrine chart
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <a href="pdfs/Wisdom_Complete_Workbook.pdf" download class="block w-full bg-gradient-to-r from-green-700 to-green-600 hover:from-green-600 hover:to-green-500 text-white font-semibold py-4 px-6 rounded-xl text-center transition shadow-lg">
-                        ⬇️ Download Complete Package (PDF)
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Quick Links Grid -->
-    <section class="py-16 relative z-10">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="font-cinzel text-2xl font-bold text-amber-100 text-center mb-8">Quick Download Links</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                <a href="pdfs/Week1_Foundations_Workbook.pdf" download class="bg-stone-800/60 border border-stone-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-700 to-green-600 rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-2 group-hover:scale-110 transition">1</div>
-                    <p class="text-stone-300 text-sm font-medium">Week 1</p>
-                    <p class="text-stone-500 text-xs">A-C</p>
-                </a>
-                <a href="pdfs/Week2_Humanity_and_Salvation_Workbook.pdf" download class="bg-stone-800/60 border border-stone-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-amber-700 to-amber-600 rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-2 group-hover:scale-110 transition">2</div>
-                    <p class="text-stone-300 text-sm font-medium">Week 2</p>
-                    <p class="text-stone-500 text-xs">D-F</p>
-                </a>
-                <a href="pdfs/Week3_The_Church_Workbook.pdf" download class="bg-stone-800/60 border border-stone-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-700 to-emerald-600 rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-2 group-hover:scale-110 transition">3</div>
-                    <p class="text-stone-300 text-sm font-medium">Week 3</p>
-                    <p class="text-stone-500 text-xs">G-J</p>
-                </a>
-                <a href="pdfs/Week4_Christian_Life_Workbook.pdf" download class="bg-stone-800/60 border border-stone-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-orange-700 to-orange-600 rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-2 group-hover:scale-110 transition">4</div>
-                    <p class="text-stone-300 text-sm font-medium">Week 4</p>
-                    <p class="text-stone-500 text-xs">K-N</p>
-                </a>
-                <a href="pdfs/Week5_Spiritual_Gifts_Workbook.pdf" download class="bg-stone-800/60 border border-stone-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-rose-700 to-rose-600 rounded-lg flex items-center justify-center text-white font-bold mx-auto mb-2 group-hover:scale-110 transition">7</div>
-                    <p class="text-stone-300 text-sm font-medium">Week 5</p>
-                    <p class="text-stone-500 text-xs">O-R</p>
-                </a>
-                <a href="pdfs/Wisdom_Complete_Workbook.pdf" download class="bg-stone-800/60 border border-green-700/50 rounded-xl p-4 text-center hover:bg-stone-700/50 transition group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center text-white text-xl mx-auto mb-2 group-hover:scale-110 transition">📦</div>
-                    <p class="text-green-400 text-sm font-medium">All Weeks</p>
-                    <p class="text-stone-500 text-xs">Complete</p>
-                </a>
+            <div class="workbook-card">
+                <h3>Week 7: Eternity and Mission</h3>
+                <p>Judgments, Heaven, Hell, Eternity, Our Mission</p>
+                <a href="pdfs/Week7_Eternity_and_Mission_Workbook.pdf" class="btn-download" download>Download PDF</a>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-stone-800 py-12 mt-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-3">
-                    <img src="images/wisdom_app.png" alt="Wisdom Logo" class="w-8 h-8 rounded-lg">
-                    <span class="font-cinzel text-lg font-bold text-amber-100">Church Doctrinal Statement of Faith</span>
-                </div>
-                <div class="flex flex-wrap justify-center gap-6 text-sm">
-                    <a href="index.html" class="text-stone-500 hover:text-amber-200 transition">Home</a>
-                    <a href="week1.html" class="text-stone-500 hover:text-amber-200 transition">Week 1</a>
-                    <a href="week2.html" class="text-stone-500 hover:text-amber-200 transition">Week 2</a>
-                    <a href="week3.html" class="text-stone-500 hover:text-amber-200 transition">Week 3</a>
-                    <a href="week4.html" class="text-stone-500 hover:text-amber-200 transition">Week 4</a>
-                    <a href="week5.html" class="text-stone-500 hover:text-amber-200 transition">Week 5</a>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-stone-800 text-center">
-                <p class="text-stone-600 text-sm">Bible Study Curriculum by Pastor Brian Bailey</p>
-            </div>
+        <div class="complete-workbook">
+            <h3>Complete Workbook</h3>
+            <p>Download the complete 7-week curriculum workbook in one PDF file.</p>
+            <a href="pdfs/Church_Doctrinal_Statement_Complete_Workbook_Brown cover.pdf" class="btn-primary" download>Download Complete Workbook</a>
         </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="week1.html">Curriculum</a>
+            <a href="workbooks.html">Workbooks</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer-copyright">2024 Church Doctrinal Statement of Faith Bible Course by Pastor Brian Ellis Bailey</p>
     </footer>
 
-    <!-- Tab JavaScript -->
-    <script>
-        function showTab(tabName) {
-            // Hide all content
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Remove active class from all buttons
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected content
-            document.getElementById('content-' + tabName).classList.add('active');
-            
-            // Add active class to selected button
-            document.getElementById('tab-' + tabName).classList.add('active');
-        }
-    </script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
